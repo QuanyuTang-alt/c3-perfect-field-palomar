@@ -1,0 +1,14 @@
+C3 perfect-field formalization
+Mathematical authors: Wen Chang and Quanyu Tang.
+
+Includes adapted source from The Tau Ceti contributors, Apache-2.0;
+original copyright and adaptation notices are retained in the source files.
+Prior Codex attribution is retained where present. The continuation is
+Doubao-assisted; these tools are not mathematical coauthors.
+
+Uses (as a pinned Git proof dependency, not bundled manuscript text):
+Haruhisa Enomoto, third-brauer-thrall-conjecture,
+https://github.com/haruhisa-enomoto/third-brauer-thrall-conjecture
+revision 5aa8d0c033014aa2d73fe5d6306d6e6d4edbb14f, Apache-2.0.
+
+The excluded Chang–Tang manuscript is not licensed by this repository.

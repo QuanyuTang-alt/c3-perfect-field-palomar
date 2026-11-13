@@ -1,0 +1,8 @@
+.lake/
+*.olean
+*.ilean
+*.olean.*
+*.ir
+.DS_Store
+verification/*.ndjson
+verification/kernel-local.json

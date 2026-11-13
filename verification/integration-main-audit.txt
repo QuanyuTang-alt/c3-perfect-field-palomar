@@ -1,0 +1,39 @@
+C3PerfectField.indecomposable_iff_largeIndecomposable: [propext, Classical.choice, Quot.sound]
+C3PerfectField.not_representationFinite_of_infiniteRepresentationType: [propext, Classical.choice, Quot.sound]
+C3PerfectField.infinite_arComponents_algebraicallyClosed: [propext, Classical.choice, Quot.sound]
+C3PerfectField.mainTheorem: [propext, Classical.choice, Quot.sound]
+theorem C3PerfectField.mainTheorem.{u} : ∀ (k A : Type u) [inst : Field k] [inst_1 : Ring A] [inst_2 : Algebra k A]
+  [inst_3 : PerfectField k] [inst_4 : FiniteDimensional k A], C3PerfectField.MainStatement k A :=
+fun k A [Field k] [Ring A] [Algebra k A] [PerfectField k] [FiniteDimensional k A] hA =>
+  C3PerfectField.infinite_arComponents_of_scalarExtension
+    (C3PerfectField.infinite_arComponents_algebraicallyClosed
+      (C3PerfectField.infiniteRepresentationType_scalarExtension hA))
+theorem C3PerfectField.infinite_arComponents_algebraicallyClosed.{u} : ∀ {k A : Type u} [inst : Field k]
+  [inst_1 : Ring A] [inst_2 : Algebra k A] [FiniteDimensional k A] [IsAlgClosed k],
+  C3PerfectField.InfiniteRepresentationType k A → Infinite (C3PerfectField.ARGraph k A).ConnectedComponent :=
+fun {k A} [Field k] [Ring A] [Algebra k A] [FiniteDimensional k A] [IsAlgClosed k] hA =>
+  Exists.casesOn
+    (LargeIndecomposable.theoremA k A (C3PerfectField.not_representationFinite_of_infiniteRepresentationType hA))
+    fun F h =>
+    And.casesOn h fun hF right =>
+      And.casesOn right fun left right =>
+        And.casesOn right fun hfinite right =>
+          let P := F.obj (C3Kronecker.simpleTarget k);
+          let Q := F.obj (C3Kronecker.projectivePair k);
+          have hP := hfinite (C3Kronecker.simpleTarget k) C3Kronecker.presentation_finite.left;
+          have hQ := hfinite (C3Kronecker.projectivePair k) C3Kronecker.presentation_finite.right;
+          let this := hP;
+          let this_1 := hQ;
+          let f := F.map (C3Kronecker.relation 0);
+          let g := F.map C3Kronecker.relationDirection;
+          have hind := fun lambda =>
+            have hi :=
+              (C3PerfectField.indecomposable_iff_largeIndecomposable (F.obj (C3Kronecker.regular lambda))).mpr
+                (C3Kronecker.imageRegular_indecomposable F hF lambda);
+            CategoryTheory.Indecomposable.of_iso hi (C3Kronecker.imageRegularCokernelIso F hF lambda).symm;
+          have hreflect := fun lambda mu he =>
+            Nonempty.casesOn he fun e =>
+              C3Kronecker.imageRegular_parameter F hF
+                ((C3Kronecker.imageRegularCokernelIso F hF lambda).symm ≪≫
+                  e ≪≫ C3Kronecker.imageRegularCokernelIso F hF mu);
+          C3PerfectField.infinite_arComponents_of_injective_affineCokernelFamily f g hind hreflect

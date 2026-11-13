@@ -1,0 +1,38 @@
+name = "c3_perfect_field"
+version = "0.1.0"
+defaultTargets = ["Solution"]
+
+[leanOptions]
+autoImplicit = false
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4"
+rev = "c55e6e786f49471c72fbddbec5415808896aec1e"
+
+[[require]]
+name = "large_indecomposable"
+git = "https://github.com/haruhisa-enomoto/third-brauer-thrall-conjecture"
+rev = "5aa8d0c033014aa2d73fe5d6306d6e6d4edbb14f"
+
+[[lean_lib]]
+name = "C3PerfectField"
+globs = ["C3PerfectField.+"]
+weakLeanArgs = ["-j1", "-M10000"]
+
+[[lean_lib]]
+name = "TauCeti"
+globs = ["TauCeti.+"]
+leanOptions = { autoImplicit = true }
+weakLeanArgs = ["-j1", "-M10000"]
+
+[[lean_lib]]
+name = "C3Integration"
+roots = ["C3Kronecker", "C3KroneckerPresentation", "C3KroneckerEmbedding", "C3Integration"]
+weakLeanArgs = ["-j1", "-M10000"]
+
+[[lean_lib]]
+name = "Challenge"
+
+[[lean_lib]]
+name = "Solution"

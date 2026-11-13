@@ -1,0 +1,13 @@
+✔ [2854/2885] Built C3PerfectField.MainStatement (4.2s)
+✔ [3107/3133] Built TauCeti.CategoryTheory.Preadditive.Indecomposable (4.4s)
+✔ [3374/3413] Built C3PerfectField.RadicalBlocks (4.3s)
+✔ [3397/3436] Built TauCeti.Algebra.Module.ProjectiveCover.Basic (4.2s)
+✔ [3418/3445] Built TauCeti.CategoryTheory.Functor.LocalEnd (4.0s)
+✔ [3428/3447] Built TauCeti.CategoryTheory.Preadditive.MorphismIdeal.Biproduct (3.4s)
+✔ [3431/3448] Built TauCeti.RingTheory.Length (5.4s)
+✔ [3562/3601] Built TauCeti.Algebra.Module.HomCocycle.Range (4.1s)
+✔ [3636/3684] Built TauCeti.Algebra.Module.AuslanderReiten.Full (5.1s)
+✔ [3720/3769] Built TauCeti.CategoryTheory.Preadditive.Radical.Basic (4.4s)
+✔ [5483/5525] Built C3PerfectField.ScalarExtensionHom (9.4s)
+✔ [8434/8467] Built C3PerfectField.ScalarExtensionEndQuotients (13s)
+Build completed successfully (10351 jobs).

@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "Please cite the mathematical authors and this formalization."
+title: "Infinite Auslander–Reiten components over perfect fields"
+type: software
+authors:
+  - family-names: Chang
+    given-names: Wen
+  - family-names: Tang
+    given-names: Quanyu
+license: Apache-2.0
+version: 0.1.0
+url: "https://github.com/QuanyuTang-alt/c3-perfect-field-palomar"
+references:
+  - type: article
+    title: "Infinitely many components in Auslander–Reiten quivers of representation-infinite algebras over perfect fields"
+    authors:
+      - family-names: Chang
+        given-names: Wen
+      - family-names: Tang
+        given-names: Quanyu
+    url: "https://arxiv.org/html/2607.24466v2"
+abstract: "Unconditional Lean formalization for representation-infinite finite-dimensional algebras over perfect fields."

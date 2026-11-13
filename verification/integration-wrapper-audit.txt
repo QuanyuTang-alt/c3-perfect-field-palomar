@@ -1,0 +1,16 @@
+C3PerfectField.indecomposable_iff_largeIndecomposable: [propext, Classical.choice, Quot.sound]
+C3PerfectField.not_representationFinite_of_infiniteRepresentationType: [propext, Classical.choice, Quot.sound]
+C3PerfectField.infinite_arComponents_algebraicallyClosed: [propext, Classical.choice, Quot.sound]
+C3PerfectField.mainTheorem: [propext, Classical.choice, Quot.sound]
+PalomarC3.main_result: [propext, Classical.choice, Quot.sound]
+theorem C3PerfectField.mainTheorem.{u} : ∀ (k A : Type u) [inst : Field k] [inst_1 : Ring A] [inst_2 : Algebra k A]
+  [inst_3 : PerfectField k] [inst_4 : FiniteDimensional k A], C3PerfectField.MainStatement k A :=
+fun k A [Field k] [Ring A] [Algebra k A] [PerfectField k] [FiniteDimensional k A] hA =>
+  C3PerfectField.infinite_arComponents_of_scalarExtension
+    (C3PerfectField.infinite_arComponents_algebraicallyClosed
+      (C3PerfectField.infiniteRepresentationType_scalarExtension hA))
+theorem PalomarC3.main_result.{u} : ∀ (k A : Type u) [inst : Field k] [inst_1 : Ring A] [inst_2 : Algebra k A]
+  [PerfectField k] [FiniteDimensional k A],
+  C3PerfectField.InfiniteRepresentationType k A → Infinite (C3PerfectField.ARGraph k A).ConnectedComponent :=
+fun k A [Field k] [Ring A] [Algebra k A] [PerfectField k] [FiniteDimensional k A] hA =>
+  C3PerfectField.mainTheorem k A hA

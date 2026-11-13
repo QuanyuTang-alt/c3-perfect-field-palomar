@@ -1,0 +1,115 @@
+version: "v0.4"
+project:
+  name: "Infinite Auslander–Reiten components over perfect fields"
+  description: >-
+    An unconditional Lean proof that a representation-infinite finite-dimensional
+    algebra over a perfect field has infinitely many connected Auslander–Reiten
+    components, using actual finite-dimensional left modules and radical-square arrows.
+  authors: ["Wen Chang", "Quanyu Tang"]
+  responsible_maintainers: ["Quanyu Tang"]
+  license: "Apache-2.0"
+repository:
+  role: "substantive-development"
+classification:
+  arxiv: ["math.RT", "math.RA"]
+  msc2020: ["16G60", "16G10", "16G20"]
+sources:
+  - title: "Infinitely many components in Auslander–Reiten quivers of representation-infinite algebras over perfect fields"
+    authors: ["Wen Chang", "Quanyu Tang"]
+    type: "paper"
+    id: "https://arxiv.org/html/2607.24466v2"
+    location: "Theorem 1.2"
+    relationship: "adapts"
+    author_endorsement: "other"
+    note: >-
+      Public statement of the same main theorem as the expanded input manuscript
+      below. The latter was the direct proof-development source. Proof texts are
+      not claimed to be byte-identical. Quanyu Tang supplied the source and
+      authorized publication; no separate Lean review by Wen Chang is asserted.
+  - title: "Infinitely many Auslander–Reiten components over perfect fields"
+    authors: ["Wen Chang", "Quanyu Tang"]
+    type: "unpublished-manuscript"
+    id: "sha256:698b9bfe948d1f84fbe37d25d82a6526589671a5b7a524ea8231922a65f3b23f"
+    location: "Theorem thm:main"
+    relationship: "adapts"
+    author_endorsement: "other"
+    note: >-
+      Quanyu Tang supplied the manuscript and directed the continuation. The manuscript
+      is excluded. The perfect-field descent follows its proof; the closed-field
+      parameter family is obtained through an equivalent affine-cokernel presentation.
+      No separate participation or Lean review by Wen Chang is asserted.
+  - title: "Representation embeddings and the third Brauer–Thrall conjecture"
+    authors: ["Haruhisa Enomoto"]
+    type: "paper"
+    id: "https://arxiv.org/abs/2611.06325v1"
+    location: "Theorem A"
+    relationship: "background"
+    author_endorsement: "not-contacted"
+    note: >-
+      The proved representation embedding is imported from the pinned public Lean
+      library. The original source and its stronger infinite-dimensional results
+      are not re-attributed to this project's authors.
+related_formalizations:
+  - id: "https://github.com/haruhisa-enomoto/third-brauer-thrall-conjecture"
+    relationship: "builds-on"
+    note: "Proved embedding dependency at 5aa8d0c033014aa2d73fe5d6306d6e6d4edbb14f."
+  - id: "https://github.com/TauCetiProject/TauCeti"
+    relationship: "adapts"
+    note: "Dependency closure retained from prior local C3 development; copyright notices retained."
+status:
+  scope: >-
+    Main theorem over arbitrary perfect fields, with k and A in the same arbitrary
+    universe. No embedding, family or literature premise is assumed. Only the main
+    theorem is selected by Comparator; the whole manuscript is not separately claimed.
+  sorry_count: 0
+  sorry_in_definitions: 0
+  axioms: ["propext", "Classical.choice", "Quot.sound"]
+  main_results:
+    - declaration: "PalomarC3.main_result"
+      file: "Solution.lean"
+      sorry_count: 0
+      axioms: ["propext", "Classical.choice", "Quot.sound"]
+      comparator_config: "comparator.json"
+      literature_dependencies: []
+automation:
+  methods:
+    - method: "agent"
+      models: ["Doubao (豆包)"]
+      framework: "Doubao Work"
+      tool_setup: >-
+        Direct local Lean/Lake compiler feedback, source inspection, actual theorem
+        and axiom audits, and pinned source-only integration. No Codex proof-generation
+        session was run in this continuation.
+      prompting_notes: >-
+        Continue the supplied informal manuscript and prior local Lean progress;
+        eliminate all extra mathematical hypotheses; retain provenance; initially prepare
+        private materials, then publish on GitHub after the user's express authorization.
+        Exclude the original TeX and do not submit to Palomar.
+  notes: >-
+    Earlier local source includes Codex attribution and reused Tau Ceti modules.
+    The complete historical model-by-model contribution record is not reconstructed.
+    The embedding dependency has its own provenance. AI tools are not coauthors.
+fidelity:
+  divergences: >-
+    The final theorem keeps exactly the mathematical source hypotheses and conclusion.
+    The closed-field proof uses affine cokernels obtained from an actual Kronecker
+    embedding, rather than proving the full finite-free polynomial bimodule input
+    standalone. The field and algebra share one arbitrary universe; connectedness
+    is undirected and loops are omitted. See docs/ERRATA-AND-DEVIATIONS.md.
+review:
+  status: "self-assessed"
+  reviewers: ["Doubao-assisted source and compiler checks"]
+  notes: >-
+    Compiler and axiom checks plus source-to-statement self-review. No independent
+    human expert review, line-by-line review of the upstream library, or Palomar
+    acceptance is claimed. Executed and outstanding mechanical checks are in
+    verification/STATUS.md.
+alignment:
+  namespace: "PalomarC3"
+  statements:
+    - source: "Chang–Tang manuscript, thm:main"
+      lean: "PalomarC3.main_result"
+      module: "Solution"
+      status: "proved"
+      note: "Unconditional assembly from C3PerfectField.mainTheorem."
+acknowledgements: "Lean, Mathlib, the Tau Ceti contributors, and Haruhisa Enomoto's proved embedding library."
