@@ -41,7 +41,7 @@ jobs:
         with:
           auto-config: "false"
           build: "true"
-          build-args: "+Solution +Challenge"
+          build-args: "+C3PalomarSubmission.Solution +C3PalomarSubmission.Challenge"
           use-mathlib-cache: "true"
           use-github-cache: "false"
       - name: Validate repository metadata
@@ -51,5 +51,6 @@ jobs:
       - name: Check source integrity and axiom closure
         run: |
           python3 scripts/check_integrity.py
+          python3 scripts/test_module_layout.py
           lake env lean verification/Audit.lean
           git diff --exit-code

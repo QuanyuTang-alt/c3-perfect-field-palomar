@@ -1,6 +1,6 @@
 name = "c3_perfect_field"
 version = "0.1.0"
-defaultTargets = ["Solution"]
+defaultTargets = ["C3PalomarSubmissionSolution"]
 
 [leanOptions]
 autoImplicit = false
@@ -32,7 +32,9 @@ roots = ["C3Kronecker", "C3KroneckerPresentation", "C3KroneckerEmbedding", "C3In
 weakLeanArgs = ["-j1", "-M10000"]
 
 [[lean_lib]]
-name = "Challenge"
+name = "C3PalomarSubmissionChallenge"
+roots = ["C3PalomarSubmission.Challenge"]
 
 [[lean_lib]]
-name = "Solution"
+name = "C3PalomarSubmissionSolution"
+roots = ["C3PalomarSubmission.Solution"]

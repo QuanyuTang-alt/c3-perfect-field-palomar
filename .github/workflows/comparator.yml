@@ -46,7 +46,7 @@ jobs:
         with:
           auto-config: "false"
           build: "true"
-          build-args: "+Solution +Challenge"
+          build-args: "+C3PalomarSubmission.Solution +C3PalomarSubmission.Challenge"
           use-mathlib-cache: "true"
           use-github-cache: "false"
       - name: Validate repository metadata
@@ -56,5 +56,6 @@ jobs:
       - name: Compare definitions, statements and replay the proof
         run: |
           python3 scripts/check_integrity.py
+          python3 scripts/test_module_layout.py
           bash scripts/verify-comparator.sh
           git diff --exit-code

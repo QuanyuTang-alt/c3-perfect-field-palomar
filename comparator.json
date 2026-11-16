@@ -1,6 +1,6 @@
 {
-  "challenge_module": "Challenge",
-  "solution_module": "Solution",
+  "challenge_module": "C3PalomarSubmission.Challenge",
+  "solution_module": "C3PalomarSubmission.Solution",
   "theorem_names": ["PalomarC3.main_result"],
   "definition_names": [],
   "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]

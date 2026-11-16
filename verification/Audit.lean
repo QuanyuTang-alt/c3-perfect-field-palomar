@@ -1,7 +1,7 @@
 module
 
 import all C3Integration
-import all Solution
+import all C3PalomarSubmission.Solution
 import Lean.Util.CollectAxioms
 
 /-! Mechanical regression checks of the advertised declarations. -/

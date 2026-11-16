@@ -17,7 +17,7 @@ modulo radical square; connectivity is undirected, with loops discarded.
 No algebraic-closedness, countability, splitness, representation embedding,
 parameter family, or additional literature hypothesis is assumed by the final theorem.
 
-The complete proved registry-facing declaration in `Solution.lean` is
+The complete proved registry-facing declaration in `C3PalomarSubmission/Solution.lean` is
 
 ```lean
 theorem main_result (k A : Type u) [Field k] [Ring A] [Algebra k A]
@@ -29,7 +29,7 @@ theorem main_result (k A : Type u) [Field k] [Ring A] [Algebra k A]
 
 It lives in namespace `PalomarC3`. The substantive theorem is
 `C3PerfectField.mainTheorem` in `C3Integration.lean`, not the deliberate
-statement hole in `Challenge.lean`.
+statement hole in `C3PalomarSubmission/Challenge.lean`.
 
 ## What has been formalized
 
@@ -109,8 +109,9 @@ With Git, elan and Python 3 installed, in the repository root run
 ```sh
 lake env lean --version
 lake exe cache get
-lake build +Solution +Challenge
+lake build +C3PalomarSubmission.Solution +C3PalomarSubmission.Challenge
 python3 scripts/check_integrity.py
+python3 scripts/test_module_layout.py
 python3 -m pip install -r scripts/requirements-validation.txt
 python3 scripts/check_metadata.py
 lake env lean verification/Audit.lean
@@ -126,7 +127,7 @@ bash scripts/verify-comparator.sh
 
 The script compares the independent Mathlib-only Challenge to Solution,
 checks the standard axiom allowlist, and replays through Lean, NanoDa and con-ron.
-It never imports `Challenge` into the proof. The one deliberate `sorry` in
+It never imports `C3PalomarSubmission.Challenge` into the proof. The one deliberate `sorry` in
 Challenge is the statement hole, not a proof dependency. The substantive source
 and Solution have no `sorry`, `admit`, `native_decide` or custom axiom.
 
@@ -137,8 +138,19 @@ The authors have authorized **public GitHub publication** of this source package
 The two GitHub Actions workflows run on pushes and pull requests to `main`,
 and can be started manually. Their badges link to the actual current results;
 local checks and workflow files alone are not evidence of a green hosted run.
-Palomar submission and registration have **not** been performed. Publication
-of this repository does not itself authorize a registry submission.
+A submission of commit `186c74eee4e960e1d0b6621e0e9310156d91bbe2` failed
+Palomar's module-source provenance check because the dependency also contains
+a root `Challenge.lean`. The registry-facing modules are now
+`C3PalomarSubmission.Challenge` and `C3PalomarSubmission.Solution`, under a
+top-level directory absent from all pinned dependencies. The statement,
+definitions and proof are unchanged. See
+[Module-layout repair](docs/PALOMAR-MODULE-LAYOUT.md).
+
+A new Palomar submission must use the full commit SHA of this repaired revision.
+The root project layout and `comparator.json` metadata/configuration paths are
+unchanged; the dotted module names are configured inside that JSON file.
+No new submission has been made by the assisting agent, and no registration or
+Palomar acceptance is claimed.
 
 ## Files
 
@@ -147,8 +159,8 @@ of this repository does not itself authorize a registry submission.
 * `C3Kronecker*.lean`: regular family and affine short exact presentation.
 * `TauCeti/`: dependency closure from the prior development, with
   existing copyright and adaptation notices retained.
-* `Challenge.lean`: small, independently readable statement and definitions.
-* `Solution.lean`, `comparator.json`: proved comparison target and configuration.
+* `C3PalomarSubmission/Challenge.lean`: small, independently readable statement and definitions.
+* `C3PalomarSubmission/Solution.lean`, `comparator.json`: proved comparison target and configuration.
 * `formalization.yaml`, `CITATION.cff`, `LICENSE`: metadata, authors and licensing.
 * `verification/Audit.lean`, `scripts/`: reproducible integrity/axiom/comparison checks.
 * `verification/vendor-tauceti.json`: verified fixed upstream revision and the

@@ -59,6 +59,32 @@ statements or proofs; its current status is shown by the linked README badges
 and GitHub Actions. Do not treat these old run links as evidence that an arbitrary
 later revision passed.
 
+## Module-layout repair checks
+
+After the Palomar provenance failure described below, the new registry modules
+were validated locally with the pinned toolchain:
+
+* `lake build +C3PalomarSubmission.Solution +C3PalomarSubmission.Challenge`:
+  PASS, 10351 build jobs; both newly named modules compiled.
+* `lake env lean verification/Audit.lean`: PASS, exact target type and all five
+  advertised exports use only `propext`, `Classical.choice`, `Quot.sound`.
+* `python3 scripts/check_integrity.py`: PASS, 210 module sources; definition
+  identity, proof-hole quarantine, checksums and provenance coverage checked.
+* `python3 scripts/test_module_layout.py`: PASS, both directory and Lean-file
+  collisions rejected, missing dependency rejected, restored layout accepted.
+* Metadata schema plus configured module/file alignment, README theorem
+  substring check, shell syntax, CI YAML parse and Git whitespace checks: PASS.
+* All ten real dependency roots match their exact manifest Git revisions, and
+  none contains a top-level `C3PalomarSubmission` or `C3PalomarSubmission.lean`.
+* Challenge and Solution are byte-identical to their original files; all other
+  mathematical Lean sources and dependency pins are unchanged. Only the audit
+  module's import line changes.
+
+These local checks are not a new Palomar submission. Both enabled hosted
+workflows must be checked on the repaired commit before resubmitting; they
+rerun the new layout regression and real dependency audit, and the comparator
+workflow replays the renamed solution in all three kernels.
+
 ## Historical local checks and review boundary
 
 The saved local Comparator/checker records were obtained on macOS with
@@ -93,9 +119,25 @@ source and metadata checks; the comparator workflow uses genuine Linux
 bubblewrap and Lean, NanoDa and con-ron. Local macOS success does not by itself
 establish sandboxed Linux success.
 
-**Palomar submission/registration: NOT PERFORMED.** Public GitHub publication
-is authorized; registry submission is still a separate action. No independent
-human expert review or Palomar acceptance is claimed.
+**Palomar submission status:** the maintainer submitted commit
+`186c74eee4e960e1d0b6621e0e9310156d91bbe2`. Its
+[mechanical run](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/43906636480)
+failed with diagnostic `challenge.module_root_shadowed`: Verso would find
+`Challenge.lean` in the `large_indecomposable` dependency rather than the local
+statement. The report lists this one repository repair. It did not reach
+independent kernel checks (`kernels` is empty); the earlier successful project
+CI is separate evidence and is not Palomar acceptance.
+
+The repaired modules are `C3PalomarSubmission.Challenge` and
+`C3PalomarSubmission.Solution`. Both are moved byte-for-byte, so the theorem and
+its meaning are unchanged. The new top-level directory is absent from all
+pinned dependencies. `scripts/check_integrity.py` now rejects module-root
+collisions for both registry modules, besides its existing source checks.
+See `docs/PALOMAR-MODULE-LAYOUT.md` for the precise changes and regression test.
+
+The repaired commit needs a **new submission** by the maintainer. No new
+submission or registration was performed by the assisting agent; no human
+expert review or Palomar acceptance is claimed.
 
 The local source and proof checks above remain valid. GitHub publication does
 not alter the theorem, its definitions, dependency pins or the axiom policy.

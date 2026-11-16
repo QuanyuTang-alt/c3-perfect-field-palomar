@@ -38,7 +38,7 @@ None claimed. This is not an exhaustive errata review of the entire manuscript.
    categorical module carrier is `Type u`. Undirected connectivity is encoded
    by a simple graph omitting loops, which do not change components. No separate
    universe-change equivalence theorem is advertised. Definitions appear
-   literally in `Challenge.lean` and `C3PerfectField/MainStatement.lean`.
+   literally in `C3PalomarSubmission/Challenge.lean` and `C3PerfectField/MainStatement.lean`.
 
 ## Enomoto embedding export
 

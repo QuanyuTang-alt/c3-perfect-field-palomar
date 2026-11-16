@@ -53,7 +53,7 @@ fixed Kronecker presentation modules, proves fiber indecomposability and
 parameter reflection, then applies the affine-cokernel component argument.
 The perfect-field theorem supplies algebraic-closure infinite representation
 type and applies the proved scalar-extension component descent. The short
-Solution wrapper consumes this complete theorem at the exact source type.
+`C3PalomarSubmission/Solution.lean` consumes this complete theorem at the exact source type.
 
 ## Mechanical evidence and boundaries
 

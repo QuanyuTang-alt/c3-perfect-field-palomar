@@ -70,7 +70,7 @@ status:
   axioms: ["propext", "Classical.choice", "Quot.sound"]
   main_results:
     - declaration: "PalomarC3.main_result"
-      file: "Solution.lean"
+      file: "C3PalomarSubmission/Solution.lean"
       sorry_count: 0
       axioms: ["propext", "Classical.choice", "Quot.sound"]
       comparator_config: "comparator.json"
@@ -115,12 +115,12 @@ alignment:
   statements:
     - source: "arXiv:2607.24466v2, Theorem 1.2"
       lean: "PalomarC3.main_result"
-      module: "Solution"
+      module: "C3PalomarSubmission.Solution"
       status: "proved"
       note: "Same main mathematical statement; the direct development input is the expanded manuscript below."
     - source: "Chang–Tang manuscript, thm:main"
       lean: "PalomarC3.main_result"
-      module: "Solution"
+      module: "C3PalomarSubmission.Solution"
       status: "proved"
       note: "Unconditional assembly from C3PerfectField.mainTheorem."
 acknowledgements: "Lean, Mathlib, the Tau Ceti contributors, and Haruhisa Enomoto's proved embedding library."

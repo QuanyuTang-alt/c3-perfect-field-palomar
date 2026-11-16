@@ -444,13 +444,13 @@
     "modified_since_prior": false
   },
   {
-    "path": "Challenge.lean",
+    "path": "C3PalomarSubmission/Challenge.lean",
     "sha256": "ea695e7b1977a361131b15b97fd0745d8a5dc0c8e0c563e1d92b5c0e28eaaf64",
     "origin": "Doubao-assisted continuation",
     "modified_since_prior": false
   },
   {
-    "path": "Solution.lean",
+    "path": "C3PalomarSubmission/Solution.lean",
     "sha256": "ad2911d8bbb4fd70d454856e83e5404a5376faeabd451f3d07d306141562a6fa",
     "origin": "Doubao-assisted continuation",
     "modified_since_prior": false
@@ -1255,7 +1255,7 @@
   },
   {
     "path": "verification/Audit.lean",
-    "sha256": "714dbf8292a7a541551052831c21fac73c2a6411439eed63f92e5c40cbe2d4a0",
+    "sha256": "f4131918b1a8ffc4b6e4de9dcc00002870626facb9ddd1f123278c56a67d7c17",
     "origin": "Doubao-assisted continuation",
     "modified_since_prior": false
   }
