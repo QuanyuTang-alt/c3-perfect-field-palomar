@@ -6,7 +6,8 @@ public import C3PerfectField.ModuleDuality
 The module-valued transpose of the chosen minimal projective presentation,
 and its dimension-preserving field dual. The quotient uses the right
 `A`-action on `Hom_A(P,A)`. Almost split existence and the identification of
-its kernel with this module are separate, still unproved obligations.
+its kernel with this chosen dual transpose are proved in
+`AlmostSplitExistence.lean`, rather than assumed by this construction.
 -/
 
 @[expose] public section

@@ -1,0 +1,1212 @@
+{
+  "schema_version": 1,
+  "repository": "https://github.com/TauCetiProject/TauCeti",
+  "upstream_commit": "83769e442d55cda9d85b3927a93b286831c595ff",
+  "upstream_mathlib_commit": "1b1ccf4b088b32fa3f23f2de1127433254a81e1e",
+  "initial_adaptation_mathlib_commit": "9d581dfff2e41de989072ea63abf3daf69311520",
+  "release_mathlib_commit": "c55e6e786f49471c72fbddbec5415808896aec1e",
+  "entry_module": "TauCeti.Algebra.Category.ModuleCat.AuslanderReiten.Sequence",
+  "module_count": 133,
+  "license": "Apache-2.0; original copyright and author headers retained",
+  "verification": "All upstream hashes rechecked against a tarball fetched via GitHub CLI at the stated immutable commit. All initial adaptation hashes checked against the preserved prior source; release hashes computed from this repository. These are source identity checks, not an independent mathematical review.",
+  "adaptation": "Initial local adaptation changed Mathlib API references in two modules. The current release additionally ports eight modules to its pinned Lean/Mathlib version, with source notices retained. This record distinguishes all three byte revisions and does not claim the adapted files are identical to upstream.",
+  "modules": [
+    {
+      "module": "TauCeti.Algebra.Category.ModuleCat.Algebra",
+      "path": "TauCeti/Algebra/Category/ModuleCat/Algebra.lean",
+      "upstream_sha256": "deb6f4349e949cce49e8e1a705dad772df803309dccfaef365c816bd909c9021",
+      "initial_adaptation_sha256": "deb6f4349e949cce49e8e1a705dad772df803309dccfaef365c816bd909c9021",
+      "release_sha256": "deb6f4349e949cce49e8e1a705dad772df803309dccfaef365c816bd909c9021",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.Algebra.Category.ModuleCat.AuslanderReiten.Basic",
+      "path": "TauCeti/Algebra/Category/ModuleCat/AuslanderReiten/Basic.lean",
+      "upstream_sha256": "c0a86580ef6736efd26f92c1abda88194f12f688c9a9d4a90f146474bf03b9ee",
+      "initial_adaptation_sha256": "c0a86580ef6736efd26f92c1abda88194f12f688c9a9d4a90f146474bf03b9ee",
+      "release_sha256": "c0a86580ef6736efd26f92c1abda88194f12f688c9a9d4a90f146474bf03b9ee",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.Algebra.Category.ModuleCat.AuslanderReiten.ExtensionClass",
+      "path": "TauCeti/Algebra/Category/ModuleCat/AuslanderReiten/ExtensionClass.lean",
+      "upstream_sha256": "16974a98cea1d32f232b6c2e572db53ec4b4d7cf73f7f0f5276700cc3f7d40d4",
+      "initial_adaptation_sha256": "16974a98cea1d32f232b6c2e572db53ec4b4d7cf73f7f0f5276700cc3f7d40d4",
+      "release_sha256": "16974a98cea1d32f232b6c2e572db53ec4b4d7cf73f7f0f5276700cc3f7d40d4",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.Algebra.Category.ModuleCat.AuslanderReiten.LeftAlmostSplit",
+      "path": "TauCeti/Algebra/Category/ModuleCat/AuslanderReiten/LeftAlmostSplit.lean",
+      "upstream_sha256": "abd540e99828e33868d0b3f8c7ceb0066c90d81f47af08ac68aed26e0323b937",
+      "initial_adaptation_sha256": "abd540e99828e33868d0b3f8c7ceb0066c90d81f47af08ac68aed26e0323b937",
+      "release_sha256": "abd540e99828e33868d0b3f8c7ceb0066c90d81f47af08ac68aed26e0323b937",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.Algebra.Category.ModuleCat.AuslanderReiten.Sequence",
+      "path": "TauCeti/Algebra/Category/ModuleCat/AuslanderReiten/Sequence.lean",
+      "upstream_sha256": "cb160dd6f936542a38dba643f099c11e13aeff01726cf7c9678e71cfb82ac8df",
+      "initial_adaptation_sha256": "cb160dd6f936542a38dba643f099c11e13aeff01726cf7c9678e71cfb82ac8df",
+      "release_sha256": "cb160dd6f936542a38dba643f099c11e13aeff01726cf7c9678e71cfb82ac8df",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.Algebra.Category.ModuleCat.AuslanderReiten.Translate",
+      "path": "TauCeti/Algebra/Category/ModuleCat/AuslanderReiten/Translate.lean",
+      "upstream_sha256": "1b6fb425da4815771ef7ab0772e33b4e153739f1e25e844b6bafb5c454f416b6",
+      "initial_adaptation_sha256": "1b6fb425da4815771ef7ab0772e33b4e153739f1e25e844b6bafb5c454f416b6",
+      "release_sha256": "1b6fb425da4815771ef7ab0772e33b4e153739f1e25e844b6bafb5c454f416b6",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.Algebra.Category.ModuleCat.HomCocycle",
+      "path": "TauCeti/Algebra/Category/ModuleCat/HomCocycle.lean",
+      "upstream_sha256": "742719a07f3a824309d400967a0cf2e13470190e68f4c1b2356e0515ce618978",
+      "initial_adaptation_sha256": "742719a07f3a824309d400967a0cf2e13470190e68f4c1b2356e0515ce618978",
+      "release_sha256": "742719a07f3a824309d400967a0cf2e13470190e68f4c1b2356e0515ce618978",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.Algebra.Category.ModuleCat.Indecomposable",
+      "path": "TauCeti/Algebra/Category/ModuleCat/Indecomposable.lean",
+      "upstream_sha256": "046f9477f2d8ea7f2d6580a82116845d7e9d23f236ca56c41170d8f5da0e8bb7",
+      "initial_adaptation_sha256": "046f9477f2d8ea7f2d6580a82116845d7e9d23f236ca56c41170d8f5da0e8bb7",
+      "release_sha256": "046f9477f2d8ea7f2d6580a82116845d7e9d23f236ca56c41170d8f5da0e8bb7",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.Algebra.Category.ModuleCat.MatlisDual",
+      "path": "TauCeti/Algebra/Category/ModuleCat/MatlisDual.lean",
+      "upstream_sha256": "e1e69d88feef572a3b68ef741eeaacdffac3da6e15a884ee1f72b7d8ec8f68ac",
+      "initial_adaptation_sha256": "e1e69d88feef572a3b68ef741eeaacdffac3da6e15a884ee1f72b7d8ec8f68ac",
+      "release_sha256": "e1e69d88feef572a3b68ef741eeaacdffac3da6e15a884ee1f72b7d8ec8f68ac",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.Algebra.Category.ModuleCat.Projective.Stable",
+      "path": "TauCeti/Algebra/Category/ModuleCat/Projective/Stable.lean",
+      "upstream_sha256": "abb9d7f1ab585bb7ef32cb07c3973a6f932f5249633e0899f2953a9bfe41feb8",
+      "initial_adaptation_sha256": "abb9d7f1ab585bb7ef32cb07c3973a6f932f5249633e0899f2953a9bfe41feb8",
+      "release_sha256": "abb9d7f1ab585bb7ef32cb07c3973a6f932f5249633e0899f2953a9bfe41feb8",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.Algebra.Category.ModuleCat.ProjectiveStable.Isomorphism",
+      "path": "TauCeti/Algebra/Category/ModuleCat/ProjectiveStable/Isomorphism.lean",
+      "upstream_sha256": "a6439ce2057988469792a84abd57c91670f09e5dbb28bde3ac4c9b5291c34713",
+      "initial_adaptation_sha256": "a6439ce2057988469792a84abd57c91670f09e5dbb28bde3ac4c9b5291c34713",
+      "release_sha256": "a6439ce2057988469792a84abd57c91670f09e5dbb28bde3ac4c9b5291c34713",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.Algebra.Category.ModuleCat.ProjectiveStable.Reflection",
+      "path": "TauCeti/Algebra/Category/ModuleCat/ProjectiveStable/Reflection.lean",
+      "upstream_sha256": "900c7ec8d0514fa5307b8e224c03721cd79c0a0a6bcadebf8483523a2b7c0d44",
+      "initial_adaptation_sha256": "900c7ec8d0514fa5307b8e224c03721cd79c0a0a6bcadebf8483523a2b7c0d44",
+      "release_sha256": "900c7ec8d0514fa5307b8e224c03721cd79c0a0a6bcadebf8483523a2b7c0d44",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.Algebra.Category.ModuleCat.Quotient",
+      "path": "TauCeti/Algebra/Category/ModuleCat/Quotient.lean",
+      "upstream_sha256": "db3df338759c82559f26897d4073cd3b5060e348096637880de743eaec0b35d8",
+      "initial_adaptation_sha256": "db3df338759c82559f26897d4073cd3b5060e348096637880de743eaec0b35d8",
+      "release_sha256": "db3df338759c82559f26897d4073cd3b5060e348096637880de743eaec0b35d8",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.Algebra.Category.ModuleCat.ScalarDual",
+      "path": "TauCeti/Algebra/Category/ModuleCat/ScalarDual.lean",
+      "upstream_sha256": "a19d1af94c5f9114fbfc40e5ace744a2d12424928b6c4c8a689312dd0b147732",
+      "initial_adaptation_sha256": "a19d1af94c5f9114fbfc40e5ace744a2d12424928b6c4c8a689312dd0b147732",
+      "release_sha256": "a19d1af94c5f9114fbfc40e5ace744a2d12424928b6c4c8a689312dd0b147732",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.Algebra.Homology.Ext.Basic",
+      "path": "TauCeti/Algebra/Homology/Ext/Basic.lean",
+      "upstream_sha256": "51ed04291b7177d7446a60caa50a31641315208d525f7eebde8a51ea1dac7c90",
+      "initial_adaptation_sha256": "51ed04291b7177d7446a60caa50a31641315208d525f7eebde8a51ea1dac7c90",
+      "release_sha256": "51ed04291b7177d7446a60caa50a31641315208d525f7eebde8a51ea1dac7c90",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.Algebra.Homology.Ext.Presentation",
+      "path": "TauCeti/Algebra/Homology/Ext/Presentation.lean",
+      "upstream_sha256": "b5dab6871b344868f512f9695e9f2439c0040390a3bb30f9e4a03826d90936f4",
+      "initial_adaptation_sha256": "b5dab6871b344868f512f9695e9f2439c0040390a3bb30f9e4a03826d90936f4",
+      "release_sha256": "b5dab6871b344868f512f9695e9f2439c0040390a3bb30f9e4a03826d90936f4",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.Algebra.Homology.Ext.Realization",
+      "path": "TauCeti/Algebra/Homology/Ext/Realization.lean",
+      "upstream_sha256": "39974a3893847e49ae70675efe201fd359f507da9a3e084a1a156f1c17764679",
+      "initial_adaptation_sha256": "39974a3893847e49ae70675efe201fd359f507da9a3e084a1a156f1c17764679",
+      "release_sha256": "39974a3893847e49ae70675efe201fd359f507da9a3e084a1a156f1c17764679",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.Algebra.Homology.ShortComplex.Biproduct",
+      "path": "TauCeti/Algebra/Homology/ShortComplex/Biproduct.lean",
+      "upstream_sha256": "b09ffd0d6bd0d68dacad34b844a25f7f8f69f83867fd5e480e638fb90662a7e1",
+      "initial_adaptation_sha256": "b09ffd0d6bd0d68dacad34b844a25f7f8f69f83867fd5e480e638fb90662a7e1",
+      "release_sha256": "b09ffd0d6bd0d68dacad34b844a25f7f8f69f83867fd5e480e638fb90662a7e1",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.Algebra.Homology.ShortComplex.LocalEnd",
+      "path": "TauCeti/Algebra/Homology/ShortComplex/LocalEnd.lean",
+      "upstream_sha256": "550994f000e324a85ce2b544838cd947b904efd10f9cbad0858e28e9e3a4b6fe",
+      "initial_adaptation_sha256": "550994f000e324a85ce2b544838cd947b904efd10f9cbad0858e28e9e3a4b6fe",
+      "release_sha256": "550994f000e324a85ce2b544838cd947b904efd10f9cbad0858e28e9e3a4b6fe",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.Algebra.Homology.ShortComplex.ShortExact",
+      "path": "TauCeti/Algebra/Homology/ShortComplex/ShortExact.lean",
+      "upstream_sha256": "0eb8989be3c0a20d9ea0aab9d5fbdce64e39373dc949cb8b810032b1deffd66d",
+      "initial_adaptation_sha256": "0eb8989be3c0a20d9ea0aab9d5fbdce64e39373dc949cb8b810032b1deffd66d",
+      "release_sha256": "0eb8989be3c0a20d9ea0aab9d5fbdce64e39373dc949cb8b810032b1deffd66d",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.Algebra.Homology.ShortComplex.Splitting",
+      "path": "TauCeti/Algebra/Homology/ShortComplex/Splitting.lean",
+      "upstream_sha256": "4955598f3cc40ecdbba4ddd25b3ef05eaac8dbb7c08ddc24e6a90f1f999299be",
+      "initial_adaptation_sha256": "4955598f3cc40ecdbba4ddd25b3ef05eaac8dbb7c08ddc24e6a90f1f999299be",
+      "release_sha256": "4955598f3cc40ecdbba4ddd25b3ef05eaac8dbb7c08ddc24e6a90f1f999299be",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.Algebra.Module.AuslanderReiten.CocyclePairing",
+      "path": "TauCeti/Algebra/Module/AuslanderReiten/CocyclePairing.lean",
+      "upstream_sha256": "df7a15bb425071ab1d556dd9856a8d6316e7b218dbb1479f9f751a6df7880bbd",
+      "initial_adaptation_sha256": "df7a15bb425071ab1d556dd9856a8d6316e7b218dbb1479f9f751a6df7880bbd",
+      "release_sha256": "df7a15bb425071ab1d556dd9856a8d6316e7b218dbb1479f9f751a6df7880bbd",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.Algebra.Module.AuslanderReiten.DoubleTranspose.Basic",
+      "path": "TauCeti/Algebra/Module/AuslanderReiten/DoubleTranspose/Basic.lean",
+      "upstream_sha256": "c24d4f44df687a25754f378558e4851daf22d7a23c38c801b54a158caf61e6f0",
+      "initial_adaptation_sha256": "c24d4f44df687a25754f378558e4851daf22d7a23c38c801b54a158caf61e6f0",
+      "release_sha256": "c24d4f44df687a25754f378558e4851daf22d7a23c38c801b54a158caf61e6f0",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.Algebra.Module.AuslanderReiten.DoubleTranspose.Minimal",
+      "path": "TauCeti/Algebra/Module/AuslanderReiten/DoubleTranspose/Minimal.lean",
+      "upstream_sha256": "6308b6666f8b56341df9f751af17af260fde990adb0ba82a85d28e28d3e76dbf",
+      "initial_adaptation_sha256": "6308b6666f8b56341df9f751af17af260fde990adb0ba82a85d28e28d3e76dbf",
+      "release_sha256": "6308b6666f8b56341df9f751af17af260fde990adb0ba82a85d28e28d3e76dbf",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.Algebra.Module.AuslanderReiten.DoubleTranspose.Naturality",
+      "path": "TauCeti/Algebra/Module/AuslanderReiten/DoubleTranspose/Naturality.lean",
+      "upstream_sha256": "3ac22f9cb78be1bdc2a510e05827da939049c3e7249051957aa57d1759dbc4c1",
+      "initial_adaptation_sha256": "3ac22f9cb78be1bdc2a510e05827da939049c3e7249051957aa57d1759dbc4c1",
+      "release_sha256": "3ac22f9cb78be1bdc2a510e05827da939049c3e7249051957aa57d1759dbc4c1",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.Algebra.Module.AuslanderReiten.DualPresentation",
+      "path": "TauCeti/Algebra/Module/AuslanderReiten/DualPresentation.lean",
+      "upstream_sha256": "632d8543f11e8d9748e7c429c7b05638401d842610b6039eff488bd5f2eeb3c1",
+      "initial_adaptation_sha256": "632d8543f11e8d9748e7c429c7b05638401d842610b6039eff488bd5f2eeb3c1",
+      "release_sha256": "632d8543f11e8d9748e7c429c7b05638401d842610b6039eff488bd5f2eeb3c1",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.Algebra.Module.AuslanderReiten.Faithful",
+      "path": "TauCeti/Algebra/Module/AuslanderReiten/Faithful.lean",
+      "upstream_sha256": "fe3c91c0869e10e452e902ac151df6bbfcff49facf5de1913a34adc85c0ab7a2",
+      "initial_adaptation_sha256": "fe3c91c0869e10e452e902ac151df6bbfcff49facf5de1913a34adc85c0ab7a2",
+      "release_sha256": "fe3c91c0869e10e452e902ac151df6bbfcff49facf5de1913a34adc85c0ab7a2",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.Algebra.Module.AuslanderReiten.FinitePresentation",
+      "path": "TauCeti/Algebra/Module/AuslanderReiten/FinitePresentation.lean",
+      "upstream_sha256": "d7798b60a3b8960127de43ae52c1e71a95ec048cc34785b64697703b78755499",
+      "initial_adaptation_sha256": "d7798b60a3b8960127de43ae52c1e71a95ec048cc34785b64697703b78755499",
+      "release_sha256": "d7798b60a3b8960127de43ae52c1e71a95ec048cc34785b64697703b78755499",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.Algebra.Module.AuslanderReiten.Full",
+      "path": "TauCeti/Algebra/Module/AuslanderReiten/Full.lean",
+      "upstream_sha256": "0d54231e35c7fb942b391931b40d643ba108de8b45be6b1e54e50b5d1c10aaf6",
+      "initial_adaptation_sha256": "0d54231e35c7fb942b391931b40d643ba108de8b45be6b1e54e50b5d1c10aaf6",
+      "release_sha256": "2326ec2280705f2c71a60bd51cf8131ab51875ca96a8dd98236fabe7813fd2c8",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": true
+    },
+    {
+      "module": "TauCeti.Algebra.Module.AuslanderReiten.Functor",
+      "path": "TauCeti/Algebra/Module/AuslanderReiten/Functor.lean",
+      "upstream_sha256": "ffe030cfb0693e08d88d6ba9d16f322e6d88ccfe18b79e14ff90760f2e1eaa6d",
+      "initial_adaptation_sha256": "ffe030cfb0693e08d88d6ba9d16f322e6d88ccfe18b79e14ff90760f2e1eaa6d",
+      "release_sha256": "ffe030cfb0693e08d88d6ba9d16f322e6d88ccfe18b79e14ff90760f2e1eaa6d",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.Algebra.Module.AuslanderReiten.Indecomposable",
+      "path": "TauCeti/Algebra/Module/AuslanderReiten/Indecomposable.lean",
+      "upstream_sha256": "397fec930aa8dbed3869c0752fb6e2a2da5fee61f8b2297e33ae3a683ff86f8d",
+      "initial_adaptation_sha256": "397fec930aa8dbed3869c0752fb6e2a2da5fee61f8b2297e33ae3a683ff86f8d",
+      "release_sha256": "397fec930aa8dbed3869c0752fb6e2a2da5fee61f8b2297e33ae3a683ff86f8d",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.Algebra.Module.AuslanderReiten.Injective",
+      "path": "TauCeti/Algebra/Module/AuslanderReiten/Injective.lean",
+      "upstream_sha256": "912b2e444a18dfe8aa3c73686e2e88d5763b124226a1749660279221344c6ceb",
+      "initial_adaptation_sha256": "912b2e444a18dfe8aa3c73686e2e88d5763b124226a1749660279221344c6ceb",
+      "release_sha256": "912b2e444a18dfe8aa3c73686e2e88d5763b124226a1749660279221344c6ceb",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.Algebra.Module.AuslanderReiten.InjectivelyTrivial",
+      "path": "TauCeti/Algebra/Module/AuslanderReiten/InjectivelyTrivial.lean",
+      "upstream_sha256": "00be17459d376fff6cd562e64b7849c57859a43746be1b45878f6da3b0234122",
+      "initial_adaptation_sha256": "00be17459d376fff6cd562e64b7849c57859a43746be1b45878f6da3b0234122",
+      "release_sha256": "00be17459d376fff6cd562e64b7849c57859a43746be1b45878f6da3b0234122",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.Algebra.Module.AuslanderReiten.Inverse",
+      "path": "TauCeti/Algebra/Module/AuslanderReiten/Inverse.lean",
+      "upstream_sha256": "30af7527124754cbfcfa86ab534c8c0b613dd7b0abd29029b9af8217c85499ed",
+      "initial_adaptation_sha256": "30af7527124754cbfcfa86ab534c8c0b613dd7b0abd29029b9af8217c85499ed",
+      "release_sha256": "30af7527124754cbfcfa86ab534c8c0b613dd7b0abd29029b9af8217c85499ed",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.Algebra.Module.AuslanderReiten.Isomorphism",
+      "path": "TauCeti/Algebra/Module/AuslanderReiten/Isomorphism.lean",
+      "upstream_sha256": "5cf9736531d374477790f49f417238f162dc9d7587290e309444ec8c69931096",
+      "initial_adaptation_sha256": "5cf9736531d374477790f49f417238f162dc9d7587290e309444ec8c69931096",
+      "release_sha256": "5cf9736531d374477790f49f417238f162dc9d7587290e309444ec8c69931096",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.Algebra.Module.AuslanderReiten.Kernel",
+      "path": "TauCeti/Algebra/Module/AuslanderReiten/Kernel.lean",
+      "upstream_sha256": "2fc8618c185726fad920512834e7305240940903c4a34349fc63d432c51e02e2",
+      "initial_adaptation_sha256": "2fc8618c185726fad920512834e7305240940903c4a34349fc63d432c51e02e2",
+      "release_sha256": "2fc8618c185726fad920512834e7305240940903c4a34349fc63d432c51e02e2",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.Algebra.Module.AuslanderReiten.Morphism",
+      "path": "TauCeti/Algebra/Module/AuslanderReiten/Morphism.lean",
+      "upstream_sha256": "f94435317e25ef5928d1c4b9ec68bbb385490433fc51ca9cb8d095b72aeea67e",
+      "initial_adaptation_sha256": "f94435317e25ef5928d1c4b9ec68bbb385490433fc51ca9cb8d095b72aeea67e",
+      "release_sha256": "f94435317e25ef5928d1c4b9ec68bbb385490433fc51ca9cb8d095b72aeea67e",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.Algebra.Module.AuslanderReiten.ProjectiveSummand",
+      "path": "TauCeti/Algebra/Module/AuslanderReiten/ProjectiveSummand.lean",
+      "upstream_sha256": "d633c5fb23722ac3d0d5efaeca8d648c6ef5bc563066e033c4ec868bc68175cc",
+      "initial_adaptation_sha256": "d633c5fb23722ac3d0d5efaeca8d648c6ef5bc563066e033c4ec868bc68175cc",
+      "release_sha256": "d633c5fb23722ac3d0d5efaeca8d648c6ef5bc563066e033c4ec868bc68175cc",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.Algebra.Module.AuslanderReiten.StableMorphism",
+      "path": "TauCeti/Algebra/Module/AuslanderReiten/StableMorphism.lean",
+      "upstream_sha256": "cc1ba08ec09cb53b78a337dce072149cefe2bf0d292aa5caff210d581e2f79fb",
+      "initial_adaptation_sha256": "cc1ba08ec09cb53b78a337dce072149cefe2bf0d292aa5caff210d581e2f79fb",
+      "release_sha256": "cc1ba08ec09cb53b78a337dce072149cefe2bf0d292aa5caff210d581e2f79fb",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.Algebra.Module.AuslanderReiten.Surjectivity",
+      "path": "TauCeti/Algebra/Module/AuslanderReiten/Surjectivity.lean",
+      "upstream_sha256": "8f4298edceee9ce88048ad46d573d0e5b863cdee83cdb72a2168a2aef91c5d9c",
+      "initial_adaptation_sha256": "8f4298edceee9ce88048ad46d573d0e5b863cdee83cdb72a2168a2aef91c5d9c",
+      "release_sha256": "8f4298edceee9ce88048ad46d573d0e5b863cdee83cdb72a2168a2aef91c5d9c",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.Algebra.Module.AuslanderReiten.Translate",
+      "path": "TauCeti/Algebra/Module/AuslanderReiten/Translate.lean",
+      "upstream_sha256": "6cfd7cbe227d6c26ee9674a6ef29c7fc898779ccff99322a80a48d8774e2d836",
+      "initial_adaptation_sha256": "6cfd7cbe227d6c26ee9674a6ef29c7fc898779ccff99322a80a48d8774e2d836",
+      "release_sha256": "6cfd7cbe227d6c26ee9674a6ef29c7fc898779ccff99322a80a48d8774e2d836",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.Algebra.Module.AuslanderReiten.Transpose",
+      "path": "TauCeti/Algebra/Module/AuslanderReiten/Transpose.lean",
+      "upstream_sha256": "ecb5416807caea09dad670127882c2a1646b288348ce17b9fa5905451c8ccd26",
+      "initial_adaptation_sha256": "ecb5416807caea09dad670127882c2a1646b288348ce17b9fa5905451c8ccd26",
+      "release_sha256": "ecb5416807caea09dad670127882c2a1646b288348ce17b9fa5905451c8ccd26",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.Algebra.Module.Dual.Indecomposable",
+      "path": "TauCeti/Algebra/Module/Dual/Indecomposable.lean",
+      "upstream_sha256": "05ebb5f7f021edccb89ee89ce8b69fbd6e7262cf034a3f0e7ce9dd8584e164fc",
+      "initial_adaptation_sha256": "05ebb5f7f021edccb89ee89ce8b69fbd6e7262cf034a3f0e7ce9dd8584e164fc",
+      "release_sha256": "05ebb5f7f021edccb89ee89ce8b69fbd6e7262cf034a3f0e7ce9dd8584e164fc",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.Algebra.Module.Dual.ProjectiveInjective",
+      "path": "TauCeti/Algebra/Module/Dual/ProjectiveInjective.lean",
+      "upstream_sha256": "c1306ff141cb455bb241bd4fd29cb89e33f4bd6f35efd775886a34595f7fb9e6",
+      "initial_adaptation_sha256": "c1306ff141cb455bb241bd4fd29cb89e33f4bd6f35efd775886a34595f7fb9e6",
+      "release_sha256": "c1306ff141cb455bb241bd4fd29cb89e33f4bd6f35efd775886a34595f7fb9e6",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.Algebra.Module.Equiv.Basic",
+      "path": "TauCeti/Algebra/Module/Equiv/Basic.lean",
+      "upstream_sha256": "68d9c7da276778cd7f2086186626fb7186fff1d0cf5fa0c3788a1780e8f942c3",
+      "initial_adaptation_sha256": "68d9c7da276778cd7f2086186626fb7186fff1d0cf5fa0c3788a1780e8f942c3",
+      "release_sha256": "68d9c7da276778cd7f2086186626fb7186fff1d0cf5fa0c3788a1780e8f942c3",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.Algebra.Module.HomCocycle.Basic",
+      "path": "TauCeti/Algebra/Module/HomCocycle/Basic.lean",
+      "upstream_sha256": "1776c93b4c10e6b74a783cff97e3fac095987f39916e765b357920cd3f366e47",
+      "initial_adaptation_sha256": "1776c93b4c10e6b74a783cff97e3fac095987f39916e765b357920cd3f366e47",
+      "release_sha256": "1776c93b4c10e6b74a783cff97e3fac095987f39916e765b357920cd3f366e47",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.Algebra.Module.HomCocycle.Presentation",
+      "path": "TauCeti/Algebra/Module/HomCocycle/Presentation.lean",
+      "upstream_sha256": "a75ce3bb552ecdea1e4245879b0253062779f79740f45f92698cb6ed4432fb4b",
+      "initial_adaptation_sha256": "a75ce3bb552ecdea1e4245879b0253062779f79740f45f92698cb6ed4432fb4b",
+      "release_sha256": "a75ce3bb552ecdea1e4245879b0253062779f79740f45f92698cb6ed4432fb4b",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.Algebra.Module.HomCocycle.Range",
+      "path": "TauCeti/Algebra/Module/HomCocycle/Range.lean",
+      "upstream_sha256": "83ca4a25411e12d397d82dc4c47e237c744c98fb2cf40379aab64f4dc0649a77",
+      "initial_adaptation_sha256": "83ca4a25411e12d397d82dc4c47e237c744c98fb2cf40379aab64f4dc0649a77",
+      "release_sha256": "e20a0ce10b4d70f5aa6e814a66beb08a56d0a771d80945a43dc9faeea2960e37",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": true
+    },
+    {
+      "module": "TauCeti.Algebra.Module.Injective.Basic",
+      "path": "TauCeti/Algebra/Module/Injective/Basic.lean",
+      "upstream_sha256": "a3aecdbd082c8554f7d3c67dfa21574afe89a2c669987605d6c3efc8a5206a62",
+      "initial_adaptation_sha256": "a3aecdbd082c8554f7d3c67dfa21574afe89a2c669987605d6c3efc8a5206a62",
+      "release_sha256": "a3aecdbd082c8554f7d3c67dfa21574afe89a2c669987605d6c3efc8a5206a62",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.Algebra.Module.Injective.Cogenerator",
+      "path": "TauCeti/Algebra/Module/Injective/Cogenerator.lean",
+      "upstream_sha256": "50ed259d28abe141a1ab947600413fda9425a374c91ce640bbd646e60aab3da9",
+      "initial_adaptation_sha256": "50ed259d28abe141a1ab947600413fda9425a374c91ce640bbd646e60aab3da9",
+      "release_sha256": "50ed259d28abe141a1ab947600413fda9425a374c91ce640bbd646e60aab3da9",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.Algebra.Module.Injective.DivisionRing",
+      "path": "TauCeti/Algebra/Module/Injective/DivisionRing.lean",
+      "upstream_sha256": "3c827ef4ef1c587f6edd6f8386a2fdabf6e9029144fcb82431f7a41ce25c0b26",
+      "initial_adaptation_sha256": "3c827ef4ef1c587f6edd6f8386a2fdabf6e9029144fcb82431f7a41ce25c0b26",
+      "release_sha256": "3c827ef4ef1c587f6edd6f8386a2fdabf6e9029144fcb82431f7a41ce25c0b26",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.Algebra.Module.Injective.Dual",
+      "path": "TauCeti/Algebra/Module/Injective/Dual.lean",
+      "upstream_sha256": "6f5e9d11de87c6091df0678a61e896378cf27e23e532f7358144f33673cc56df",
+      "initial_adaptation_sha256": "6f5e9d11de87c6091df0678a61e896378cf27e23e532f7358144f33673cc56df",
+      "release_sha256": "6f5e9d11de87c6091df0678a61e896378cf27e23e532f7358144f33673cc56df",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.Algebra.Module.Injective.Envelope.Basic",
+      "path": "TauCeti/Algebra/Module/Injective/Envelope/Basic.lean",
+      "upstream_sha256": "1e12317c77e522c27427b31eecf573c9633fff4adc758e6f70f1c90ed23c1ff7",
+      "initial_adaptation_sha256": "1e12317c77e522c27427b31eecf573c9633fff4adc758e6f70f1c90ed23c1ff7",
+      "release_sha256": "1e12317c77e522c27427b31eecf573c9633fff4adc758e6f70f1c90ed23c1ff7",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.Algebra.Module.Injective.Envelope.Existence",
+      "path": "TauCeti/Algebra/Module/Injective/Envelope/Existence.lean",
+      "upstream_sha256": "22a92ed0197b2fe80825e78fdfb5569c0f6e8434e963a6e7890eabbb38e1a82d",
+      "initial_adaptation_sha256": "22a92ed0197b2fe80825e78fdfb5569c0f6e8434e963a6e7890eabbb38e1a82d",
+      "release_sha256": "22a92ed0197b2fe80825e78fdfb5569c0f6e8434e963a6e7890eabbb38e1a82d",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.Algebra.Module.Injective.Hom",
+      "path": "TauCeti/Algebra/Module/Injective/Hom.lean",
+      "upstream_sha256": "1d0bfa934cc6c1b493ed57f6a29f6f988290ba119df4fc565409dd8caae08655",
+      "initial_adaptation_sha256": "1d0bfa934cc6c1b493ed57f6a29f6f988290ba119df4fc565409dd8caae08655",
+      "release_sha256": "1d0bfa934cc6c1b493ed57f6a29f6f988290ba119df4fc565409dd8caae08655",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.Algebra.Module.Injective.SelfInjective",
+      "path": "TauCeti/Algebra/Module/Injective/SelfInjective.lean",
+      "upstream_sha256": "50c17b0c58749e6e27fb40c1e4cd14224d2df36b2954e4a22452cf2cfaa39467",
+      "initial_adaptation_sha256": "50c17b0c58749e6e27fb40c1e4cd14224d2df36b2954e4a22452cf2cfaa39467",
+      "release_sha256": "50c17b0c58749e6e27fb40c1e4cd14224d2df36b2954e4a22452cf2cfaa39467",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.Algebra.Module.LinearMap.EndQuotient",
+      "path": "TauCeti/Algebra/Module/LinearMap/EndQuotient.lean",
+      "upstream_sha256": "27e71458fd974cdc68ab0d89975f931c9cdad4a49fdf5f74f714f224c4700f1a",
+      "initial_adaptation_sha256": "27e71458fd974cdc68ab0d89975f931c9cdad4a49fdf5f74f714f224c4700f1a",
+      "release_sha256": "27e71458fd974cdc68ab0d89975f931c9cdad4a49fdf5f74f714f224c4700f1a",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.Algebra.Module.MinimalProjectivePresentation.Basic",
+      "path": "TauCeti/Algebra/Module/MinimalProjectivePresentation/Basic.lean",
+      "upstream_sha256": "f6f6df394a924af06dc4f853ff3af12a1fce8dbf007f0f7e9fa3c65eb95b42e3",
+      "initial_adaptation_sha256": "f6f6df394a924af06dc4f853ff3af12a1fce8dbf007f0f7e9fa3c65eb95b42e3",
+      "release_sha256": "f6f6df394a924af06dc4f853ff3af12a1fce8dbf007f0f7e9fa3c65eb95b42e3",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.Algebra.Module.MinimalProjectivePresentation.Existence",
+      "path": "TauCeti/Algebra/Module/MinimalProjectivePresentation/Existence.lean",
+      "upstream_sha256": "4109fa33e1e55f670bc1180c0377a05dfd57aac05265645bff61b40f73bfb736",
+      "initial_adaptation_sha256": "4109fa33e1e55f670bc1180c0377a05dfd57aac05265645bff61b40f73bfb736",
+      "release_sha256": "4109fa33e1e55f670bc1180c0377a05dfd57aac05265645bff61b40f73bfb736",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.Algebra.Module.MinimalProjectivePresentation.Finite",
+      "path": "TauCeti/Algebra/Module/MinimalProjectivePresentation/Finite.lean",
+      "upstream_sha256": "db7fa745dacda6526bb1b63c64cf6e1c10d9a755d5e0d55b215b9050fd476f6f",
+      "initial_adaptation_sha256": "db7fa745dacda6526bb1b63c64cf6e1c10d9a755d5e0d55b215b9050fd476f6f",
+      "release_sha256": "db7fa745dacda6526bb1b63c64cf6e1c10d9a755d5e0d55b215b9050fd476f6f",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.Algebra.Module.Nakayama.Basic",
+      "path": "TauCeti/Algebra/Module/Nakayama/Basic.lean",
+      "upstream_sha256": "0706af9299c7b9e79ffc24f1574329023e6ec5f26a6e3675306710d12a77cd90",
+      "initial_adaptation_sha256": "0706af9299c7b9e79ffc24f1574329023e6ec5f26a6e3675306710d12a77cd90",
+      "release_sha256": "0706af9299c7b9e79ffc24f1574329023e6ec5f26a6e3675306710d12a77cd90",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.Algebra.Module.Nakayama.Hom",
+      "path": "TauCeti/Algebra/Module/Nakayama/Hom.lean",
+      "upstream_sha256": "07adcdc84d5b8b800a4b5a51f7a64a30b146169a3b94186e41ee985ee5df88f3",
+      "initial_adaptation_sha256": "07adcdc84d5b8b800a4b5a51f7a64a30b146169a3b94186e41ee985ee5df88f3",
+      "release_sha256": "07adcdc84d5b8b800a4b5a51f7a64a30b146169a3b94186e41ee985ee5df88f3",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.Algebra.Module.Opposite",
+      "path": "TauCeti/Algebra/Module/Opposite.lean",
+      "upstream_sha256": "66d361c725bf980373e9f9e34e9710973357c9dd4513d972f01419ccc7fcceb8",
+      "initial_adaptation_sha256": "ad30b7f1376f70c0760db67aa2ede940dafdf65b1c8f4a40a50a8ca1a82a3af9",
+      "release_sha256": "ad30b7f1376f70c0760db67aa2ede940dafdf65b1c8f4a40a50a8ca1a82a3af9",
+      "initial_adaptation_modified": true,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.Algebra.Module.Projective.FinitePresentation",
+      "path": "TauCeti/Algebra/Module/Projective/FinitePresentation.lean",
+      "upstream_sha256": "d2f81e9fa3ccc9b3250d48f5284d613f19c44a4a9df60e9c841c216783d6a94f",
+      "initial_adaptation_sha256": "d2f81e9fa3ccc9b3250d48f5284d613f19c44a4a9df60e9c841c216783d6a94f",
+      "release_sha256": "d2f81e9fa3ccc9b3250d48f5284d613f19c44a4a9df60e9c841c216783d6a94f",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.Algebra.Module.Projective.LinearMap",
+      "path": "TauCeti/Algebra/Module/Projective/LinearMap.lean",
+      "upstream_sha256": "d120892c7939802dd71421e072e9a6465bcf294e5350ae9b8607a6506beb58d2",
+      "initial_adaptation_sha256": "d120892c7939802dd71421e072e9a6465bcf294e5350ae9b8607a6506beb58d2",
+      "release_sha256": "d120892c7939802dd71421e072e9a6465bcf294e5350ae9b8607a6506beb58d2",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.Algebra.Module.Projective.Schanuel",
+      "path": "TauCeti/Algebra/Module/Projective/Schanuel.lean",
+      "upstream_sha256": "5c2d6b68a66d3bc53bafb85daa71d7581e3fd7a6a1ce420024b1a22e043a8238",
+      "initial_adaptation_sha256": "5c2d6b68a66d3bc53bafb85daa71d7581e3fd7a6a1ce420024b1a22e043a8238",
+      "release_sha256": "5c2d6b68a66d3bc53bafb85daa71d7581e3fd7a6a1ce420024b1a22e043a8238",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.Algebra.Module.ProjectiveCover.Basic",
+      "path": "TauCeti/Algebra/Module/ProjectiveCover/Basic.lean",
+      "upstream_sha256": "a2a706e01a5914096c69f7fe84e7dacf97fe4c2461a02bd9e13f4f69eff04237",
+      "initial_adaptation_sha256": "a2a706e01a5914096c69f7fe84e7dacf97fe4c2461a02bd9e13f4f69eff04237",
+      "release_sha256": "15150624727d1f534985a312de914752483b74540322c5dc03f091b54817b73f",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": true
+    },
+    {
+      "module": "TauCeti.Algebra.Module.ProjectiveCover.Existence",
+      "path": "TauCeti/Algebra/Module/ProjectiveCover/Existence.lean",
+      "upstream_sha256": "e662ff6a941aa93919e5872df4aedad2c4d0ca9b7b19303385bee3eb7d3ae37c",
+      "initial_adaptation_sha256": "e662ff6a941aa93919e5872df4aedad2c4d0ca9b7b19303385bee3eb7d3ae37c",
+      "release_sha256": "e662ff6a941aa93919e5872df4aedad2c4d0ca9b7b19303385bee3eb7d3ae37c",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.Algebra.Module.Submodule.Essential",
+      "path": "TauCeti/Algebra/Module/Submodule/Essential.lean",
+      "upstream_sha256": "c54e7247cc56794646a604720f6f4caf611934f063ee3b2c81258f40c27bac57",
+      "initial_adaptation_sha256": "c54e7247cc56794646a604720f6f4caf611934f063ee3b2c81258f40c27bac57",
+      "release_sha256": "c54e7247cc56794646a604720f6f4caf611934f063ee3b2c81258f40c27bac57",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.Algebra.Module.Submodule.Superfluous",
+      "path": "TauCeti/Algebra/Module/Submodule/Superfluous.lean",
+      "upstream_sha256": "da8fdbca218747f1a2653b454f4bd27266b332cba3c2bca478c30a9ec2ce46b8",
+      "initial_adaptation_sha256": "da8fdbca218747f1a2653b454f4bd27266b332cba3c2bca478c30a9ec2ce46b8",
+      "release_sha256": "da8fdbca218747f1a2653b454f4bd27266b332cba3c2bca478c30a9ec2ce46b8",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.Algebra.Module.Torsion.QuotientLinearMap",
+      "path": "TauCeti/Algebra/Module/Torsion/QuotientLinearMap.lean",
+      "upstream_sha256": "ec660685d46b10b9b801165eb26d4ca2d02d44a8feeaf4dce1fbc2b32df5cc3c",
+      "initial_adaptation_sha256": "ec660685d46b10b9b801165eb26d4ca2d02d44a8feeaf4dce1fbc2b32df5cc3c",
+      "release_sha256": "ec660685d46b10b9b801165eb26d4ca2d02d44a8feeaf4dce1fbc2b32df5cc3c",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.Algebra.Ring.Opposite",
+      "path": "TauCeti/Algebra/Ring/Opposite.lean",
+      "upstream_sha256": "61259d9b5ecfbf086ff9f681fe1f626251dd221e5055fde453c62a1cefa791ce",
+      "initial_adaptation_sha256": "61259d9b5ecfbf086ff9f681fe1f626251dd221e5055fde453c62a1cefa791ce",
+      "release_sha256": "61259d9b5ecfbf086ff9f681fe1f626251dd221e5055fde453c62a1cefa791ce",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.Algebra.Ring.Subgroup",
+      "path": "TauCeti/Algebra/Ring/Subgroup.lean",
+      "upstream_sha256": "f6b40ad1051fc12e8a9e2858e6157c7094f314ea1f2db2868df50f382ddf3240",
+      "initial_adaptation_sha256": "f6b40ad1051fc12e8a9e2858e6157c7094f314ea1f2db2868df50f382ddf3240",
+      "release_sha256": "f6b40ad1051fc12e8a9e2858e6157c7094f314ea1f2db2868df50f382ddf3240",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.Algebra.Ring.Units",
+      "path": "TauCeti/Algebra/Ring/Units.lean",
+      "upstream_sha256": "638079ce97781fd5b61e466e02767e80a1c60b48708bd8f18e61c7a2b29ab73f",
+      "initial_adaptation_sha256": "638079ce97781fd5b61e466e02767e80a1c60b48708bd8f18e61c7a2b29ab73f",
+      "release_sha256": "638079ce97781fd5b61e466e02767e80a1c60b48708bd8f18e61c7a2b29ab73f",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.CategoryTheory.AlmostSplit.Basic",
+      "path": "TauCeti/CategoryTheory/AlmostSplit/Basic.lean",
+      "upstream_sha256": "3652c7adb63bcb371ee5fd8827e85a5871331f40b2eb589a3a1c7baf4e68b50f",
+      "initial_adaptation_sha256": "3652c7adb63bcb371ee5fd8827e85a5871331f40b2eb589a3a1c7baf4e68b50f",
+      "release_sha256": "3652c7adb63bcb371ee5fd8827e85a5871331f40b2eb589a3a1c7baf4e68b50f",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.CategoryTheory.AlmostSplit.Ext",
+      "path": "TauCeti/CategoryTheory/AlmostSplit/Ext.lean",
+      "upstream_sha256": "8a08e5a9c22e4fc71590aaeb04cd7466fe544c6c3ff21bd4ec562424fd5ef5fd",
+      "initial_adaptation_sha256": "8a08e5a9c22e4fc71590aaeb04cd7466fe544c6c3ff21bd4ec562424fd5ef5fd",
+      "release_sha256": "8a08e5a9c22e4fc71590aaeb04cd7466fe544c6c3ff21bd4ec562424fd5ef5fd",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.CategoryTheory.AlmostSplit.Minimal",
+      "path": "TauCeti/CategoryTheory/AlmostSplit/Minimal.lean",
+      "upstream_sha256": "fc07a3e2d6922ae240526de582fa92b12b34be6a3a84b58b2673b6bf148cd89a",
+      "initial_adaptation_sha256": "fc07a3e2d6922ae240526de582fa92b12b34be6a3a84b58b2673b6bf148cd89a",
+      "release_sha256": "fc07a3e2d6922ae240526de582fa92b12b34be6a3a84b58b2673b6bf148cd89a",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.CategoryTheory.AlmostSplit.Sequence",
+      "path": "TauCeti/CategoryTheory/AlmostSplit/Sequence.lean",
+      "upstream_sha256": "6ffbbf699949aaf90fce386eebef66586040f0c4b21424810172893d2745a20a",
+      "initial_adaptation_sha256": "6ffbbf699949aaf90fce386eebef66586040f0c4b21424810172893d2745a20a",
+      "release_sha256": "6ffbbf699949aaf90fce386eebef66586040f0c4b21424810172893d2745a20a",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.CategoryTheory.AlmostSplit.Uniqueness",
+      "path": "TauCeti/CategoryTheory/AlmostSplit/Uniqueness.lean",
+      "upstream_sha256": "4a6961acc79f2cd665f999b50fddddf143bee0e133def95cedfa39d554c1410b",
+      "initial_adaptation_sha256": "4a6961acc79f2cd665f999b50fddddf143bee0e133def95cedfa39d554c1410b",
+      "release_sha256": "4a6961acc79f2cd665f999b50fddddf143bee0e133def95cedfa39d554c1410b",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.CategoryTheory.Exact.Abelian",
+      "path": "TauCeti/CategoryTheory/Exact/Abelian.lean",
+      "upstream_sha256": "2e976fbe31cc276a663440e23786105aa8e13969d36f0fa88a869d31bc6f432d",
+      "initial_adaptation_sha256": "2e976fbe31cc276a663440e23786105aa8e13969d36f0fa88a869d31bc6f432d",
+      "release_sha256": "2e976fbe31cc276a663440e23786105aa8e13969d36f0fa88a869d31bc6f432d",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.CategoryTheory.Exact.BaseChange",
+      "path": "TauCeti/CategoryTheory/Exact/BaseChange.lean",
+      "upstream_sha256": "89c23de4d3d5dfa9fb3af6934d30c6018e9e6f033ec94b78ae3961a6602c97da",
+      "initial_adaptation_sha256": "89c23de4d3d5dfa9fb3af6934d30c6018e9e6f033ec94b78ae3961a6602c97da",
+      "release_sha256": "89c23de4d3d5dfa9fb3af6934d30c6018e9e6f033ec94b78ae3961a6602c97da",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.CategoryTheory.Exact.Biproduct",
+      "path": "TauCeti/CategoryTheory/Exact/Biproduct.lean",
+      "upstream_sha256": "ff4dbb0ee77778bb168dcc227ee7fd3e8c9d136d8510b640a40ad66b0f55c868",
+      "initial_adaptation_sha256": "ff4dbb0ee77778bb168dcc227ee7fd3e8c9d136d8510b640a40ad66b0f55c868",
+      "release_sha256": "ff4dbb0ee77778bb168dcc227ee7fd3e8c9d136d8510b640a40ad66b0f55c868",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.CategoryTheory.Exact.ExactStructure",
+      "path": "TauCeti/CategoryTheory/Exact/ExactStructure.lean",
+      "upstream_sha256": "9255dc1253103d782bb5b7fa862f74766f93e292e3339bd0dbb7f5b897b5d712",
+      "initial_adaptation_sha256": "9255dc1253103d782bb5b7fa862f74766f93e292e3339bd0dbb7f5b897b5d712",
+      "release_sha256": "9255dc1253103d782bb5b7fa862f74766f93e292e3339bd0dbb7f5b897b5d712",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.CategoryTheory.Exact.ExtensionClosed",
+      "path": "TauCeti/CategoryTheory/Exact/ExtensionClosed.lean",
+      "upstream_sha256": "d2d12cfdc6c702afca1acfb666f306e87f76ee40c0957ac713778ae05fd8ba77",
+      "initial_adaptation_sha256": "d2d12cfdc6c702afca1acfb666f306e87f76ee40c0957ac713778ae05fd8ba77",
+      "release_sha256": "d2d12cfdc6c702afca1acfb666f306e87f76ee40c0957ac713778ae05fd8ba77",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.CategoryTheory.Exact.Frobenius",
+      "path": "TauCeti/CategoryTheory/Exact/Frobenius.lean",
+      "upstream_sha256": "a5fe06294cec2d094f28367fa1e0d93145972a103d940f09748869c5cd528d17",
+      "initial_adaptation_sha256": "a5fe06294cec2d094f28367fa1e0d93145972a103d940f09748869c5cd528d17",
+      "release_sha256": "a5fe06294cec2d094f28367fa1e0d93145972a103d940f09748869c5cd528d17",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.CategoryTheory.Exact.Functor",
+      "path": "TauCeti/CategoryTheory/Exact/Functor.lean",
+      "upstream_sha256": "aeeb2efe7e63064706ee6b655667d62e30099fc01ed3d017222abb69dbd9952f",
+      "initial_adaptation_sha256": "aeeb2efe7e63064706ee6b655667d62e30099fc01ed3d017222abb69dbd9952f",
+      "release_sha256": "aeeb2efe7e63064706ee6b655667d62e30099fc01ed3d017222abb69dbd9952f",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.CategoryTheory.Exact.Injective",
+      "path": "TauCeti/CategoryTheory/Exact/Injective.lean",
+      "upstream_sha256": "7ed2a567d76fc7fecbd0c00cbe6294efdf3464e56df64c519e6feb50d047185b",
+      "initial_adaptation_sha256": "7ed2a567d76fc7fecbd0c00cbe6294efdf3464e56df64c519e6feb50d047185b",
+      "release_sha256": "7ed2a567d76fc7fecbd0c00cbe6294efdf3464e56df64c519e6feb50d047185b",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.CategoryTheory.Exact.KernelCokernelPair",
+      "path": "TauCeti/CategoryTheory/Exact/KernelCokernelPair.lean",
+      "upstream_sha256": "50e2c71880bf6b6d0e53d3d85764d33c057cc6fca5020e07e0c9abe7a41e84aa",
+      "initial_adaptation_sha256": "50e2c71880bf6b6d0e53d3d85764d33c057cc6fca5020e07e0c9abe7a41e84aa",
+      "release_sha256": "50e2c71880bf6b6d0e53d3d85764d33c057cc6fca5020e07e0c9abe7a41e84aa",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.CategoryTheory.Exact.Opposite",
+      "path": "TauCeti/CategoryTheory/Exact/Opposite.lean",
+      "upstream_sha256": "aab9a1587a08c1cf5ed8b41e9925bb304ac9c73f26ec6e7b495b69604a4371f8",
+      "initial_adaptation_sha256": "aab9a1587a08c1cf5ed8b41e9925bb304ac9c73f26ec6e7b495b69604a4371f8",
+      "release_sha256": "aab9a1587a08c1cf5ed8b41e9925bb304ac9c73f26ec6e7b495b69604a4371f8",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.CategoryTheory.Exact.Projective",
+      "path": "TauCeti/CategoryTheory/Exact/Projective.lean",
+      "upstream_sha256": "e73c69e7d53537ee2238951d1641b817ce62d115d1c3b0d117619385c812b8da",
+      "initial_adaptation_sha256": "e73c69e7d53537ee2238951d1641b817ce62d115d1c3b0d117619385c812b8da",
+      "release_sha256": "e73c69e7d53537ee2238951d1641b817ce62d115d1c3b0d117619385c812b8da",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.CategoryTheory.Exact.Resolution.Basic",
+      "path": "TauCeti/CategoryTheory/Exact/Resolution/Basic.lean",
+      "upstream_sha256": "287d320e432041b7bebae6b9af3a9c78bfd9694344bda94a7e2513c53a3d0b1e",
+      "initial_adaptation_sha256": "287d320e432041b7bebae6b9af3a9c78bfd9694344bda94a7e2513c53a3d0b1e",
+      "release_sha256": "287d320e432041b7bebae6b9af3a9c78bfd9694344bda94a7e2513c53a3d0b1e",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.CategoryTheory.Exact.Split",
+      "path": "TauCeti/CategoryTheory/Exact/Split.lean",
+      "upstream_sha256": "734da2ed8a5a15d28cd20ce072224911ba97e3007c8cdf55f394b7703cd8f297",
+      "initial_adaptation_sha256": "734da2ed8a5a15d28cd20ce072224911ba97e3007c8cdf55f394b7703cd8f297",
+      "release_sha256": "734da2ed8a5a15d28cd20ce072224911ba97e3007c8cdf55f394b7703cd8f297",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.CategoryTheory.Exact.Stable.Basic",
+      "path": "TauCeti/CategoryTheory/Exact/Stable/Basic.lean",
+      "upstream_sha256": "64bdd330658dd3251d02c1e728936a2f23557a7f6478f336c29d4ee48dcc40ac",
+      "initial_adaptation_sha256": "64bdd330658dd3251d02c1e728936a2f23557a7f6478f336c29d4ee48dcc40ac",
+      "release_sha256": "64bdd330658dd3251d02c1e728936a2f23557a7f6478f336c29d4ee48dcc40ac",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.CategoryTheory.Exact.Stable.Injective",
+      "path": "TauCeti/CategoryTheory/Exact/Stable/Injective.lean",
+      "upstream_sha256": "c202584d0f92622354655be3ab869d9a3ab1c9fd29662b35cc18b9f2adea14b0",
+      "initial_adaptation_sha256": "c202584d0f92622354655be3ab869d9a3ab1c9fd29662b35cc18b9f2adea14b0",
+      "release_sha256": "c202584d0f92622354655be3ab869d9a3ab1c9fd29662b35cc18b9f2adea14b0",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.CategoryTheory.Functor.Indecomposable",
+      "path": "TauCeti/CategoryTheory/Functor/Indecomposable.lean",
+      "upstream_sha256": "4486fbfe934002eaee087de3cc71de78d8915c93a26be521a0cb94a4e45de9ca",
+      "initial_adaptation_sha256": "4486fbfe934002eaee087de3cc71de78d8915c93a26be521a0cb94a4e45de9ca",
+      "release_sha256": "4486fbfe934002eaee087de3cc71de78d8915c93a26be521a0cb94a4e45de9ca",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.CategoryTheory.Functor.LocalEnd",
+      "path": "TauCeti/CategoryTheory/Functor/LocalEnd.lean",
+      "upstream_sha256": "47bf90b211327e815f0479431aadc2c54380c3582b0a8dc4fd01e5a11d356069",
+      "initial_adaptation_sha256": "47bf90b211327e815f0479431aadc2c54380c3582b0a8dc4fd01e5a11d356069",
+      "release_sha256": "17b2e699971b98a29dcac31ca75284b0f98dadb38a8bbb9f3e4a02c7c4b79d68",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": true
+    },
+    {
+      "module": "TauCeti.CategoryTheory.Functor.RingEquivEnd",
+      "path": "TauCeti/CategoryTheory/Functor/RingEquivEnd.lean",
+      "upstream_sha256": "a254312dc9d859b140c76c96ce173d6f3a991f595caa8a25bcae1c500d9b7d0a",
+      "initial_adaptation_sha256": "a254312dc9d859b140c76c96ce173d6f3a991f595caa8a25bcae1c500d9b7d0a",
+      "release_sha256": "a254312dc9d859b140c76c96ce173d6f3a991f595caa8a25bcae1c500d9b7d0a",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.CategoryTheory.IrreducibleMorphism",
+      "path": "TauCeti/CategoryTheory/IrreducibleMorphism.lean",
+      "upstream_sha256": "c4edbc96b330ebfe06ea5897421f50aa1f30189d50a51e78dcfdc9d80bd9aa96",
+      "initial_adaptation_sha256": "c4edbc96b330ebfe06ea5897421f50aa1f30189d50a51e78dcfdc9d80bd9aa96",
+      "release_sha256": "c4edbc96b330ebfe06ea5897421f50aa1f30189d50a51e78dcfdc9d80bd9aa96",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.CategoryTheory.Limits.Shapes.Biproduct",
+      "path": "TauCeti/CategoryTheory/Limits/Shapes/Biproduct.lean",
+      "upstream_sha256": "40b8031a99bba9a9d92f2ad08667565a022d6e2adc49d7966a81c9eefe0ba068",
+      "initial_adaptation_sha256": "40b8031a99bba9a9d92f2ad08667565a022d6e2adc49d7966a81c9eefe0ba068",
+      "release_sha256": "40b8031a99bba9a9d92f2ad08667565a022d6e2adc49d7966a81c9eefe0ba068",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.CategoryTheory.Linear.HomCokernel.Basic",
+      "path": "TauCeti/CategoryTheory/Linear/HomCokernel/Basic.lean",
+      "upstream_sha256": "102faf6f87240a71fc34c7948c1b28c83b426460923a111c5cf6ec8b4069d711",
+      "initial_adaptation_sha256": "102faf6f87240a71fc34c7948c1b28c83b426460923a111c5cf6ec8b4069d711",
+      "release_sha256": "102faf6f87240a71fc34c7948c1b28c83b426460923a111c5cf6ec8b4069d711",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.CategoryTheory.ObjectProperty",
+      "path": "TauCeti/CategoryTheory/ObjectProperty.lean",
+      "upstream_sha256": "5df46c37f343a8ea2ca1d3a26f6ac60993c6d39e4f4511e87474c81b1da5762a",
+      "initial_adaptation_sha256": "5df46c37f343a8ea2ca1d3a26f6ac60993c6d39e4f4511e87474c81b1da5762a",
+      "release_sha256": "5df46c37f343a8ea2ca1d3a26f6ac60993c6d39e4f4511e87474c81b1da5762a",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.CategoryTheory.ObjectProperty.FactorsThrough",
+      "path": "TauCeti/CategoryTheory/ObjectProperty/FactorsThrough.lean",
+      "upstream_sha256": "482db92288147c3a8c08a294a2add35fa3c6179efaf0e1f7d0e642aadea487bc",
+      "initial_adaptation_sha256": "482db92288147c3a8c08a294a2add35fa3c6179efaf0e1f7d0e642aadea487bc",
+      "release_sha256": "482db92288147c3a8c08a294a2add35fa3c6179efaf0e1f7d0e642aadea487bc",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.CategoryTheory.Preadditive.Indecomposable",
+      "path": "TauCeti/CategoryTheory/Preadditive/Indecomposable.lean",
+      "upstream_sha256": "ec475893f9e6f87e4db0c0438f65bdd02fdc87a5eb657b2e726023352f1cc6a6",
+      "initial_adaptation_sha256": "ec475893f9e6f87e4db0c0438f65bdd02fdc87a5eb657b2e726023352f1cc6a6",
+      "release_sha256": "468dbdfedc5f52eaca6a779a105962855826bc23a783b042522869f603b49e5e",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": true
+    },
+    {
+      "module": "TauCeti.CategoryTheory.Preadditive.Jacobson",
+      "path": "TauCeti/CategoryTheory/Preadditive/Jacobson.lean",
+      "upstream_sha256": "b0da1c6085d3787b727fc0c569b723148916d6fe8e29a7be4d014d0185f4363f",
+      "initial_adaptation_sha256": "b0da1c6085d3787b727fc0c569b723148916d6fe8e29a7be4d014d0185f4363f",
+      "release_sha256": "b0da1c6085d3787b727fc0c569b723148916d6fe8e29a7be4d014d0185f4363f",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.CategoryTheory.Preadditive.MorphismIdeal.Additive",
+      "path": "TauCeti/CategoryTheory/Preadditive/MorphismIdeal/Additive.lean",
+      "upstream_sha256": "a3c52d833155c6704b9e5925cbed61d718a18a24db7338508aaee2d22d9ddd0d",
+      "initial_adaptation_sha256": "a3c52d833155c6704b9e5925cbed61d718a18a24db7338508aaee2d22d9ddd0d",
+      "release_sha256": "a3c52d833155c6704b9e5925cbed61d718a18a24db7338508aaee2d22d9ddd0d",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.CategoryTheory.Preadditive.MorphismIdeal.Basic",
+      "path": "TauCeti/CategoryTheory/Preadditive/MorphismIdeal/Basic.lean",
+      "upstream_sha256": "17cf398d3b555dedb623e16b730444acf9fa1fc181010a3817126bdf8476d4cd",
+      "initial_adaptation_sha256": "17cf398d3b555dedb623e16b730444acf9fa1fc181010a3817126bdf8476d4cd",
+      "release_sha256": "17cf398d3b555dedb623e16b730444acf9fa1fc181010a3817126bdf8476d4cd",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.CategoryTheory.Preadditive.MorphismIdeal.Biproduct",
+      "path": "TauCeti/CategoryTheory/Preadditive/MorphismIdeal/Biproduct.lean",
+      "upstream_sha256": "d7895d76fb6b80aee6da764ebada783eec8b9f6f54fd068d06b811751ef5505a",
+      "initial_adaptation_sha256": "d7895d76fb6b80aee6da764ebada783eec8b9f6f54fd068d06b811751ef5505a",
+      "release_sha256": "2c48f3f0a0feb3672aea348381bee1b9a481388707d480d5cb0fdf94eb5582d4",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": true
+    },
+    {
+      "module": "TauCeti.CategoryTheory.Preadditive.MorphismIdeal.FactorThrough",
+      "path": "TauCeti/CategoryTheory/Preadditive/MorphismIdeal/FactorThrough.lean",
+      "upstream_sha256": "2bd370870375aef70c9edd10a225d2af798b916f4ec6f504ed216159520efba8",
+      "initial_adaptation_sha256": "2bd370870375aef70c9edd10a225d2af798b916f4ec6f504ed216159520efba8",
+      "release_sha256": "2bd370870375aef70c9edd10a225d2af798b916f4ec6f504ed216159520efba8",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.CategoryTheory.Preadditive.MorphismIdeal.Mul",
+      "path": "TauCeti/CategoryTheory/Preadditive/MorphismIdeal/Mul.lean",
+      "upstream_sha256": "442c52bd7536fdfdf59b8787733e06499577310fe647cceacc507c545e982e6d",
+      "initial_adaptation_sha256": "442c52bd7536fdfdf59b8787733e06499577310fe647cceacc507c545e982e6d",
+      "release_sha256": "442c52bd7536fdfdf59b8787733e06499577310fe647cceacc507c545e982e6d",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.CategoryTheory.Preadditive.Radical.Basic",
+      "path": "TauCeti/CategoryTheory/Preadditive/Radical/Basic.lean",
+      "upstream_sha256": "02dd6bb8e37e5afd7092628c8454df2bf81ee4417f526957a908559ee3d9a0d6",
+      "initial_adaptation_sha256": "02dd6bb8e37e5afd7092628c8454df2bf81ee4417f526957a908559ee3d9a0d6",
+      "release_sha256": "0ccdc353adaf1252b6768c70795aea8642c4663409e72fb38f53ebb1f032e919",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": true
+    },
+    {
+      "module": "TauCeti.LinearAlgebra.Dual.Annihilator",
+      "path": "TauCeti/LinearAlgebra/Dual/Annihilator.lean",
+      "upstream_sha256": "275167740c70308cc813855f0a6bb23e4c09b984ad61779f4c97024d464efd56",
+      "initial_adaptation_sha256": "275167740c70308cc813855f0a6bb23e4c09b984ad61779f4c97024d464efd56",
+      "release_sha256": "275167740c70308cc813855f0a6bb23e4c09b984ad61779f4c97024d464efd56",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.LinearAlgebra.Dual.Basis",
+      "path": "TauCeti/LinearAlgebra/Dual/Basis.lean",
+      "upstream_sha256": "9c9d57d01fcbeb8a931b172d93cab8374f73d8eae1e2279aa9832bb24cb01206",
+      "initial_adaptation_sha256": "9c9d57d01fcbeb8a931b172d93cab8374f73d8eae1e2279aa9832bb24cb01206",
+      "release_sha256": "9c9d57d01fcbeb8a931b172d93cab8374f73d8eae1e2279aa9832bb24cb01206",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.LinearAlgebra.Dual.End",
+      "path": "TauCeti/LinearAlgebra/Dual/End.lean",
+      "upstream_sha256": "3ba8e9dd210008eb68e8fcd560f39c9ba6f0df3df868fb255b702e6874899f5d",
+      "initial_adaptation_sha256": "3ba8e9dd210008eb68e8fcd560f39c9ba6f0df3df868fb255b702e6874899f5d",
+      "release_sha256": "3ba8e9dd210008eb68e8fcd560f39c9ba6f0df3df868fb255b702e6874899f5d",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.LinearAlgebra.Dual.Equivalence",
+      "path": "TauCeti/LinearAlgebra/Dual/Equivalence.lean",
+      "upstream_sha256": "72b394a42eedfe546da55c6e81982a3fa8d3bba908edac9a51f25561e4e196c1",
+      "initial_adaptation_sha256": "72b394a42eedfe546da55c6e81982a3fa8d3bba908edac9a51f25561e4e196c1",
+      "release_sha256": "72b394a42eedfe546da55c6e81982a3fa8d3bba908edac9a51f25561e4e196c1",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.LinearAlgebra.Dual.FiniteProjective",
+      "path": "TauCeti/LinearAlgebra/Dual/FiniteProjective.lean",
+      "upstream_sha256": "1124601de78d6049745c98837d72fe7a7a427ee01e4523ea85ec20615c2d00cc",
+      "initial_adaptation_sha256": "1124601de78d6049745c98837d72fe7a7a427ee01e4523ea85ec20615c2d00cc",
+      "release_sha256": "1124601de78d6049745c98837d72fe7a7a427ee01e4523ea85ec20615c2d00cc",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.LinearAlgebra.Dual.Opposite",
+      "path": "TauCeti/LinearAlgebra/Dual/Opposite.lean",
+      "upstream_sha256": "02fc3e0a3d0f8b1546282dc3e7ace4adc2ba7ad5974d1e8249307856bdf0fc45",
+      "initial_adaptation_sha256": "02fc3e0a3d0f8b1546282dc3e7ace4adc2ba7ad5974d1e8249307856bdf0fc45",
+      "release_sha256": "02fc3e0a3d0f8b1546282dc3e7ace4adc2ba7ad5974d1e8249307856bdf0fc45",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.LinearAlgebra.Dual.RightAction",
+      "path": "TauCeti/LinearAlgebra/Dual/RightAction.lean",
+      "upstream_sha256": "40065e8b5db9a49d9c750cecf9a4a2753cdc49aef85f04194e8a39844487e2df",
+      "initial_adaptation_sha256": "40065e8b5db9a49d9c750cecf9a4a2753cdc49aef85f04194e8a39844487e2df",
+      "release_sha256": "40065e8b5db9a49d9c750cecf9a4a2753cdc49aef85f04194e8a39844487e2df",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.LinearAlgebra.End.Basic",
+      "path": "TauCeti/LinearAlgebra/End/Basic.lean",
+      "upstream_sha256": "c0387b38d5e576e338f8dbb4de2d7793a70eb6a72dad9511a217fa8ab05a95c9",
+      "initial_adaptation_sha256": "a704655af770711fa37a25dfd737b8923329a74eac6a1a3dfd5bf85fc1011d8f",
+      "release_sha256": "a704655af770711fa37a25dfd737b8923329a74eac6a1a3dfd5bf85fc1011d8f",
+      "initial_adaptation_modified": true,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.LinearAlgebra.Submodule.Quotient",
+      "path": "TauCeti/LinearAlgebra/Submodule/Quotient.lean",
+      "upstream_sha256": "822543f368650e8743ab0c8e13c9f70dfd338b2996add4ba6c3c9e244fbad97b",
+      "initial_adaptation_sha256": "822543f368650e8743ab0c8e13c9f70dfd338b2996add4ba6c3c9e244fbad97b",
+      "release_sha256": "822543f368650e8743ab0c8e13c9f70dfd338b2996add4ba6c3c9e244fbad97b",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.LinearAlgebra.TensorProduct.Balanced.Basic",
+      "path": "TauCeti/LinearAlgebra/TensorProduct/Balanced/Basic.lean",
+      "upstream_sha256": "e40d7c7995e725474d66c2e5dbd58463a3287a15a02e7a0d498d5649dc6b9706",
+      "initial_adaptation_sha256": "e40d7c7995e725474d66c2e5dbd58463a3287a15a02e7a0d498d5649dc6b9706",
+      "release_sha256": "e40d7c7995e725474d66c2e5dbd58463a3287a15a02e7a0d498d5649dc6b9706",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.LinearAlgebra.TensorProduct.Balanced.DualHom",
+      "path": "TauCeti/LinearAlgebra/TensorProduct/Balanced/DualHom.lean",
+      "upstream_sha256": "d52e9f6729dfee33f06a0a7f755f0ea9e1687276868fdf91e3f7b0af49f423f2",
+      "initial_adaptation_sha256": "d52e9f6729dfee33f06a0a7f755f0ea9e1687276868fdf91e3f7b0af49f423f2",
+      "release_sha256": "d52e9f6729dfee33f06a0a7f755f0ea9e1687276868fdf91e3f7b0af49f423f2",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.RingTheory.Artinian.FiniteLength",
+      "path": "TauCeti/RingTheory/Artinian/FiniteLength.lean",
+      "upstream_sha256": "935fc73351d869ad384f64d20fb5badab29360e1d43fc15423da046714908bbc",
+      "initial_adaptation_sha256": "935fc73351d869ad384f64d20fb5badab29360e1d43fc15423da046714908bbc",
+      "release_sha256": "935fc73351d869ad384f64d20fb5badab29360e1d43fc15423da046714908bbc",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.RingTheory.Ideal.Operations",
+      "path": "TauCeti/RingTheory/Ideal/Operations.lean",
+      "upstream_sha256": "af2276adcbf112037ac0a23608d7dcb3230abc7ee18b30c4dbe89cc5633e69c7",
+      "initial_adaptation_sha256": "af2276adcbf112037ac0a23608d7dcb3230abc7ee18b30c4dbe89cc5633e69c7",
+      "release_sha256": "af2276adcbf112037ac0a23608d7dcb3230abc7ee18b30c4dbe89cc5633e69c7",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.RingTheory.Jacobson.Basic",
+      "path": "TauCeti/RingTheory/Jacobson/Basic.lean",
+      "upstream_sha256": "062df42be42424c7e58fffc6b074f656ecf647f736666b178c1cd7d5b5a8c1d9",
+      "initial_adaptation_sha256": "062df42be42424c7e58fffc6b074f656ecf647f736666b178c1cd7d5b5a8c1d9",
+      "release_sha256": "062df42be42424c7e58fffc6b074f656ecf647f736666b178c1cd7d5b5a8c1d9",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.RingTheory.Jacobson.Module",
+      "path": "TauCeti/RingTheory/Jacobson/Module.lean",
+      "upstream_sha256": "bf1affd02cb7ba4e00b3af80072de421c86c5c6d5235002d96f5fc5fb6c8628c",
+      "initial_adaptation_sha256": "bf1affd02cb7ba4e00b3af80072de421c86c5c6d5235002d96f5fc5fb6c8628c",
+      "release_sha256": "bf1affd02cb7ba4e00b3af80072de421c86c5c6d5235002d96f5fc5fb6c8628c",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.RingTheory.Jacobson.Semiprimary",
+      "path": "TauCeti/RingTheory/Jacobson/Semiprimary.lean",
+      "upstream_sha256": "81b3c380ee8cbbc4c1c7e75b442517d030108be6ad097c2d8bccb4a05a39687a",
+      "initial_adaptation_sha256": "81b3c380ee8cbbc4c1c7e75b442517d030108be6ad097c2d8bccb4a05a39687a",
+      "release_sha256": "81b3c380ee8cbbc4c1c7e75b442517d030108be6ad097c2d8bccb4a05a39687a",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.RingTheory.KrullSchmidt.Indecomposable",
+      "path": "TauCeti/RingTheory/KrullSchmidt/Indecomposable.lean",
+      "upstream_sha256": "7d131e7daf1b8d6ad33d0d54720a303fd64e0e70b4108586a03adee9278e3024",
+      "initial_adaptation_sha256": "7d131e7daf1b8d6ad33d0d54720a303fd64e0e70b4108586a03adee9278e3024",
+      "release_sha256": "7d131e7daf1b8d6ad33d0d54720a303fd64e0e70b4108586a03adee9278e3024",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.RingTheory.Length",
+      "path": "TauCeti/RingTheory/Length.lean",
+      "upstream_sha256": "65db2d69f053901eb30a02de7180c9a2157228e30303db38c0e6c3e5b73a5744",
+      "initial_adaptation_sha256": "65db2d69f053901eb30a02de7180c9a2157228e30303db38c0e6c3e5b73a5744",
+      "release_sha256": "bf1970f28bdeb413ef92dde5b42e647ddf493fd0c18903847d016fa719cf8fc3",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": true
+    },
+    {
+      "module": "TauCeti.RingTheory.LocalRing.Basic",
+      "path": "TauCeti/RingTheory/LocalRing/Basic.lean",
+      "upstream_sha256": "f432b38101c0778a9a0c09379c285626a1d0693e2ba10eeebe1b53a66c1e93b0",
+      "initial_adaptation_sha256": "f432b38101c0778a9a0c09379c285626a1d0693e2ba10eeebe1b53a66c1e93b0",
+      "release_sha256": "f432b38101c0778a9a0c09379c285626a1d0693e2ba10eeebe1b53a66c1e93b0",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.RingTheory.MatlisDuality.Basic",
+      "path": "TauCeti/RingTheory/MatlisDuality/Basic.lean",
+      "upstream_sha256": "3f7f1993fedf3af1a062e279a43781021ff5913513f65c01daaeeb4ad1fd4c8f",
+      "initial_adaptation_sha256": "3f7f1993fedf3af1a062e279a43781021ff5913513f65c01daaeeb4ad1fd4c8f",
+      "release_sha256": "3f7f1993fedf3af1a062e279a43781021ff5913513f65c01daaeeb4ad1fd4c8f",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.RingTheory.MatlisDuality.Semilocal",
+      "path": "TauCeti/RingTheory/MatlisDuality/Semilocal.lean",
+      "upstream_sha256": "b420d78d3e5e4dbe94baae1e59d662c14ab216fbc7b1342feec33a16036c893c",
+      "initial_adaptation_sha256": "b420d78d3e5e4dbe94baae1e59d662c14ab216fbc7b1342feec33a16036c893c",
+      "release_sha256": "b420d78d3e5e4dbe94baae1e59d662c14ab216fbc7b1342feec33a16036c893c",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.RingTheory.Noetherian.LinearMap",
+      "path": "TauCeti/RingTheory/Noetherian/LinearMap.lean",
+      "upstream_sha256": "dbb670b629612185b91e138d9c112780d70b2b00631447066806c6bf27841e41",
+      "initial_adaptation_sha256": "dbb670b629612185b91e138d9c112780d70b2b00631447066806c6bf27841e41",
+      "release_sha256": "dbb670b629612185b91e138d9c112780d70b2b00631447066806c6bf27841e41",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    },
+    {
+      "module": "TauCeti.RingTheory.SimpleModule.Basic",
+      "path": "TauCeti/RingTheory/SimpleModule/Basic.lean",
+      "upstream_sha256": "6664087058238a455eec509f97246668e2780a76ff580976610304e3bf2d3b4d",
+      "initial_adaptation_sha256": "6664087058238a455eec509f97246668e2780a76ff580976610304e3bf2d3b4d",
+      "release_sha256": "6664087058238a455eec509f97246668e2780a76ff580976610304e3bf2d3b4d",
+      "initial_adaptation_modified": false,
+      "modified_after_initial_adaptation": false
+    }
+  ]
+}

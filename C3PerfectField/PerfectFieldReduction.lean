@@ -5,9 +5,14 @@ public import C3PerfectField.AlgebraicallyClosedComponents
 public import Mathlib.FieldTheory.IsAlgClosed.AlgebraicClosure
 
 /-!
-Assembly of the perfect-field argument, conditional on the outstanding
-Bongartz representation-embedding existence theorem. The conditional
-premise is explicit: this file does not prove `mainTheorem`.
+Conditional helpers for the polynomial-tensor route to the perfect-field result.
+Their `PolynomialEmbeddingExistence` premise is explicit and is not discharged
+in this file. They do not establish polynomial embedding existence.
+
+The unconditional theorem `C3PerfectField.mainTheorem` is proved in
+`C3Integration.lean`: it uses the proved Kronecker embedding and affine-cokernel
+family together with the scalar-extension descent results imported here.
+Importing this module does not add its conditional premises to that theorem.
 -/
 
 @[expose] public section
@@ -37,9 +42,10 @@ variable {k K : Type u} {A : Type v}
   [Field k] [Field K] [Algebra k K] [Ring A] [Algebra k A]
   [Module.Finite k A] [PerfectField k] [IsAlgClosure k K]
 
-/-- The closed-field argument and the full component-descent theorem
-complete the target implication if the missing embedding theorem is
-provided for the algebraic-closure extension. -/
+/-- The polynomial-tensor route and the full component-descent theorem give
+the target implication when the stated polynomial embedding existence premise
+is supplied for the algebraic-closure extension. The unconditional affine route
+is assembled separately in `C3Integration.lean`. -/
 theorem mainStatement_of_scalarExtension_embeddingExistence
     (hB : PolynomialEmbeddingExistence K (K ⊗[k] A)) :
     MainStatement k A := by
@@ -50,9 +56,9 @@ theorem mainStatement_of_scalarExtension_embeddingExistence
     (infinite_arComponents_of_polynomialRepresentationEmbedding ρ hρ)
 
 omit [Field K] [Algebra k K] [IsAlgClosure k K] in
-/-- The algebraic closure itself is constructed by Mathlib. Its existence
-adds no premise; only the unproved polynomial embedding existence remains.
-This is a conditional reduction, not the unconditional main theorem. -/
+/-- The algebraic closure itself is constructed by Mathlib. This helper keeps
+the polynomial embedding existence premise explicit. It is a conditional
+reduction, not `C3PerfectField.mainTheorem` in `C3Integration.lean`. -/
 theorem mainStatement_of_algebraicClosure_embeddingExistence
     (hB : PolynomialEmbeddingExistence (AlgebraicClosure k) (AlgebraicClosure k ⊗[k] A)) :
     MainStatement k A :=

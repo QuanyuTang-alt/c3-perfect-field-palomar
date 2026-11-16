@@ -8,8 +8,12 @@ public import Mathlib.Algebra.Homology.ShortComplex.ModuleCat
 
 /-!
 Almost split existence, identified with the manuscript's chosen `D Tr`.
-The imported Tau Ceti proof closure is vendored at the fixed commit recorded
-in `verification/vendor-tauceti.json`; all its declarations are axiom-audited.
+The imported Tau Ceti modules are included as adapted source, with their
+copyright notices retained. `verification/vendor-tauceti.json` records the
+verified upstream revision and distinguishes upstream, initial adaptation and
+current release hashes; `verification/module-origins.json` covers all local
+modules. The final theorem's proof dependency closure is axiom-audited, not
+a claim that every declaration of the upstream repository was reviewed.
 The cover predicate in that library uses superfluous kernels. The bridge
 below derives that property from the manuscript's endomorphism minimality.
 -/

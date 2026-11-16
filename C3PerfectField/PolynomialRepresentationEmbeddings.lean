@@ -4,10 +4,15 @@ public import C3PerfectField.PolynomialTensorSpecializations
 public import C3PerfectField.ARDimension
 
 /-!
-The tensor functor and its representation-embedding contract.
-This file proves Lemma `lem:family` from a supplied representation embedding.
-The unconditional existence theorem `ext:embedding` is still unproved.
-The contract below is not an axiom or a premise of `MainStatement`.
+The tensor functor and its polynomial representation-embedding contract.
+This file proves Lemma `lem:family` from a supplied representation embedding;
+it does not prove the stronger polynomial-bimodule existence statement
+`ext:embedding`. The contract is not an axiom or a premise of `MainStatement`.
+
+The unconditional main theorem is `C3PerfectField.mainTheorem` in
+`C3Integration.lean`. Its proof constructs the sufficient affine-cokernel
+family from the proved Kronecker representation embedding, without assuming
+this polynomial-tensor contract or claiming its standalone existence theorem.
 -/
 
 @[expose] public section

@@ -43,19 +43,19 @@
   },
   {
     "path": "C3PerfectField/AlgebraicallyClosedComponents.lean",
-    "sha256": "1dc84fbac56e5e3e5437f437f5332621a3b5740e14dc1c8175e3e33c215789b9",
+    "sha256": "714298fb547088801a135e7f3d9b1b739a18afead53adb9c11c20b3506371054",
     "origin": "prior local C3 development",
     "modified_since_prior": false
   },
   {
     "path": "C3PerfectField/AlmostSplitExistence.lean",
-    "sha256": "5c2a05b09551375a2bcf42af09c688d769b0e6a588eacc9ce49c64b6c3421412",
+    "sha256": "099841c04f30095e82e53da9ab175adb5dd1b50c4d26da1455e3f17972755776",
     "origin": "prior local C3 development",
     "modified_since_prior": false
   },
   {
     "path": "C3PerfectField/AlmostSplitPredecessors.lean",
-    "sha256": "fd8fd894e887b1e7a01b77626f1ee61338435a61d0c8b66b8656c88ec7c14a19",
+    "sha256": "672c1d5ecbe9ecda8c660e2b93909da2eed888ded2fdc2aef1a524da3306091e",
     "origin": "prior local C3 development",
     "modified_since_prior": false
   },
@@ -79,7 +79,7 @@
   },
   {
     "path": "C3PerfectField/ComponentSeparation.lean",
-    "sha256": "de58b28b9ea12e203124a15b7db9b292bc184baff00dc86b2366f597a79e66b3",
+    "sha256": "c9738486fd10ed74a4d97cff268646d9b64aaa37058ef390818ca6a62a7bd6ea",
     "origin": "prior local C3 development",
     "modified_since_prior": false
   },
@@ -217,7 +217,7 @@
   },
   {
     "path": "C3PerfectField/PerfectFieldReduction.lean",
-    "sha256": "7e5140d9206dc251bc9b8cffdcea166311bf12331c577f0500943649500e680d",
+    "sha256": "209123693a433ef34a9615b57e6b2bd69060ff53d6afc8b2a09fe1c814047721",
     "origin": "prior local C3 development",
     "modified_since_prior": false
   },
@@ -235,7 +235,7 @@
   },
   {
     "path": "C3PerfectField/PolynomialRepresentationEmbeddings.lean",
-    "sha256": "d76b3c6a0a9d55a4b4165eef430a9c0de302a6eacf49a53793d4f2f855be46da",
+    "sha256": "9eaf8a36300517618ca48337acad4f0e7a836ffa26a34fa4397c520327c84ceb",
     "origin": "prior local C3 development",
     "modified_since_prior": false
   },
@@ -421,7 +421,7 @@
   },
   {
     "path": "C3PerfectField/TransposeModules.lean",
-    "sha256": "b531cadacea1fb2e9d97a3774ce9f87db81894d9e2ef9f19fdc265b3b618975e",
+    "sha256": "1df30479fca7ec8aa85f980da26e228f108d9cc11ac9527b0d605d815f68a1ae",
     "origin": "prior local C3 development",
     "modified_since_prior": false
   },

@@ -55,7 +55,11 @@ related_formalizations:
     note: "Proved embedding dependency at 5aa8d0c033014aa2d73fe5d6306d6e6d4edbb14f."
   - id: "https://github.com/TauCetiProject/TauCeti"
     relationship: "adapts"
-    note: "Dependency closure retained from prior local C3 development; copyright notices retained."
+    note: >-
+      133 vendored modules from upstream commit 83769e442d55cda9d85b3927a93b286831c595ff,
+      with copyright notices retained. verification/vendor-tauceti.json distinguishes
+      verified upstream, initial adaptation and current release hashes;
+      verification/module-origins.json records the full local release inventory.
 status:
   scope: >-
     Main theorem over arbitrary perfect fields, with k and A in the same arbitrary
@@ -100,13 +104,20 @@ review:
   status: "self-assessed"
   reviewers: ["Doubao-assisted source and compiler checks"]
   notes: >-
-    Compiler and axiom checks plus source-to-statement self-review. No independent
-    human expert review, line-by-line review of the upstream library, or Palomar
-    acceptance is claimed. Executed and outstanding mechanical checks are in
-    verification/STATUS.md.
+    Compiler and axiom checks plus source-to-statement self-review. The maintainer
+    also supplied a separate LLM review of commit 131da532f985913d25ec6c815a98153c4aa8d200;
+    its identity is unspecified, and its stated scope and limitations are recorded
+    in docs/REVIEW-NOTES.md. No independent human expert review, line-by-line review
+    of the upstream library, or Palomar acceptance is claimed. Commit-bound
+    mechanical checks are recorded in verification/STATUS.md.
 alignment:
   namespace: "PalomarC3"
   statements:
+    - source: "arXiv:2607.24466v2, Theorem 1.2"
+      lean: "PalomarC3.main_result"
+      module: "Solution"
+      status: "proved"
+      note: "Same main mathematical statement; the direct development input is the expanded manuscript below."
     - source: "Chang–Tang manuscript, thm:main"
       lean: "PalomarC3.main_result"
       module: "Solution"

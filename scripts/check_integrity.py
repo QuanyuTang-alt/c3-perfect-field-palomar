@@ -26,7 +26,7 @@ for p in sorted(ROOT.rglob('*')):
         t=without_comments(s); sources.append(rel.as_posix())
         if not re.match(r'\s*module\b',t): errors.append(f'Not a module: {rel}')
         if len(s.splitlines())>10000: errors.append(f'Too long: {rel}')
-        holes=re.findall(r'\b(?:sorry|admit|native_decide|axiom)\b',t)
+        holes=re.findall(r'\b(?:sorry|admit|native_decide|axiom|unsafe)\b|Lean\.ofReduceBool',t)
         if rel.as_posix()=='Challenge.lean':
             if holes!=['sorry']: errors.append('Challenge must have exactly one theorem hole')
             if len(s.splitlines())>1000 or len(s.encode())>102400: errors.append('Challenge size limit')
@@ -40,9 +40,47 @@ if 'external_kernels' in conf: errors.append('External kernels belong to generat
 manifest=json.loads((ROOT/'lake-manifest.json').read_text())
 for pkg in manifest['packages']:
     if pkg['type']!='git' or not re.fullmatch('[0-9a-f]{40}',pkg.get('rev','')): errors.append(f'Unpinned dependency: {pkg["name"]}')
+checksum_entries={}
 for line in (ROOT/'verification/SHA256SUMS').read_text().splitlines():
     digest,name=line.split('  ',1)
+    if name in checksum_entries: errors.append(f'Duplicate checksum entry: {name}')
+    checksum_entries[name]=digest
     if hashlib.sha256((ROOT/name).read_bytes()).hexdigest()!=digest: errors.append(f'Checksum mismatch: {name}')
+if set(checksum_entries)!=set(sources): errors.append('Checksum inventory does not cover exactly all local Lean sources')
+origins=json.loads((ROOT/'verification/module-origins.json').read_text())
+if len({x['path'] for x in origins})!=len(origins) or {x['path'] for x in origins}!=set(sources):
+    errors.append('Module origins must cover each local Lean source exactly once')
+for entry in origins:
+    if hashlib.sha256((ROOT/entry['path']).read_bytes()).hexdigest()!=entry['sha256']:
+        errors.append(f'Module-origin hash mismatch: {entry["path"]}')
+vendor=json.loads((ROOT/'verification/vendor-tauceti.json').read_text())
+paths={x['path'] for x in vendor['modules']}
+if vendor['module_count']!=len(vendor['modules']) or len(paths)!=len(vendor['modules']):
+    errors.append('Tau Ceti provenance count or uniqueness mismatch')
+if paths!={name for name in sources if name.startswith('TauCeti/')}:
+    errors.append('Tau Ceti provenance must cover exactly all vendored modules')
+for entry in vendor['modules']:
+    if hashlib.sha256((ROOT/entry['path']).read_bytes()).hexdigest()!=entry['release_sha256']:
+        errors.append(f'Tau Ceti release hash mismatch: {entry["path"]}')
+    for field in ['upstream_sha256','initial_adaptation_sha256','release_sha256']:
+        if not re.fullmatch('[0-9a-f]{64}',entry[field]): errors.append(f'Invalid provenance hash: {entry["path"]}')
+if not re.fullmatch('[0-9a-f]{40}',vendor['upstream_commit']): errors.append('Unpinned Tau Ceti source revision')
+mathlib_rev=next(p['rev'] for p in manifest['packages'] if p['name']=='mathlib')
+if vendor['release_mathlib_commit']!=mathlib_rev: errors.append('Tau Ceti release Mathlib revision mismatch')
+challenge=without_comments((ROOT/'Challenge.lean').read_text()).split('namespace PalomarC3',1)[0]
+statement=without_comments((ROOT/'C3PerfectField/MainStatement.lean').read_text())
+if re.sub(r'\s+','',challenge)!=re.sub(r'\s+','',statement):
+    errors.append('Challenge definitions differ from the production statement definitions')
+seen=set(); work=['Solution']
+while work:
+    name=work.pop()
+    if name in seen: continue
+    path=ROOT/(name.replace('.','/')+'.lean')
+    if not path.exists(): continue
+    seen.add(name)
+    text=without_comments(path.read_text())
+    work.extend(re.findall(r'^\s*(?:public\s+)?import\s+(?:all\s+)?([\w.]+)',text,re.M))
+if 'Challenge' in seen: errors.append('Challenge must not be imported by Solution')
 if errors:
     print('\n'.join(errors),file=sys.stderr); raise SystemExit(1)
 print(f'PASS: {len(sources)} module sources, no proof holes outside Challenge, pinned Git dependencies, no private references, source checksums match')

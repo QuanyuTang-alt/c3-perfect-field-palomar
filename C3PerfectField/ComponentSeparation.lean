@@ -4,8 +4,10 @@ public import C3PerfectField.WeightedGraph
 
 /-!
 The final finite-component contradiction in the algebraically closed argument,
-as a graph lemma. Its witness hypothesis must still be constructed for the
-actual module category; it is not part of the manuscript's main statement.
+as a standalone graph lemma. Its witness is an explicit hypothesis here,
+not part of the manuscript's main statement. For the actual AR graph it is
+constructed in `AffineCokernelComponents.lean` and supplied by the unconditional
+assembly in `C3Integration.lean`.
 -/
 
 @[expose] public section
@@ -38,7 +40,8 @@ theorem infinite_components_of_finite_set_separation (G : SimpleGraph V)
 separating every finite set of fixed vertices force infinitely many components.
 
 The witness condition is an explicit hypothesis of this standalone graph
-lemma. Proving it from infinite representation type is still an obligation. -/
+lemma. The actual module-category witness is proved and consumed in
+`AffineCokernelComponents.lean` and `C3Integration.lean`. -/
 theorem WeightedDigraph.infinite_components_of_prime_period_witness
     (G : WeightedDigraph V)
     (hwitness : ∀ s : Finset V, ∃ (φ : G.Automorphism) (p : ℕ) (x : V),

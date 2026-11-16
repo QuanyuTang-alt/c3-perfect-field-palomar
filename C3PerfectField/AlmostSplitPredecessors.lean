@@ -4,8 +4,9 @@ public import C3PerfectField.ARDimension
 
 /-!
 The predecessor-summand argument from manuscript `lem:predecessor-summand`.
-Existence and dimension estimates for right almost split maps remain
-separate obligations: no such map is assumed by the main statement.
+This module proves predecessor estimates for a given right almost split map.
+Its existence and dimension bounds are supplied by `AlmostSplitExistence.lean`
+and the assembled local bounds; they are not hypotheses of the main theorem.
 -/
 
 @[expose] public section
@@ -58,8 +59,8 @@ theorem predecessor_iso_component_of_rightAlmostSplit
     (isIndecomposableSummand_of_arrow_rightAlmostSplit q hq h)
 
 /-- For such a map, the actual AR predecessors on isomorphism classes form
-a finite set. This proves the finiteness step independently of the still
-unproved global existence theorem for almost split maps. -/
+a finite set. This finiteness lemma is independent of the construction of the
+almost split map, which is supplied in `AlmostSplitExistence.lean`. -/
 theorem finite_arPredecessors_of_rightAlmostSplit
     {X : IndecomposableModule k A} {E : FiniteModule k A}
     (q : E.val ⟶ X.obj) (hq : IsRightAlmostSplit (k := k) q) :

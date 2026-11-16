@@ -57,12 +57,13 @@ Solution wrapper consumes this complete theorem at the exact source type.
 
 ## Mechanical evidence and boundaries
 
-The integration `main-audit.log` checks declaration kind, the independently
-written exact-type application and the axiom closure of four substantive
-exports. All returned only `propext`, `Classical.choice`, `Quot.sound`.
-The shipped `verification/Audit.lean` reruns these checks and the registry
-wrapper on the final release tree. See `verification/STATUS.md` for actual
-execution status; compilation alone is not source fidelity.
+The recorded `verification/integration-main-audit.txt` checks declaration kind,
+an exact-type application and the axiom closure of four substantive exports.
+All returned only `propext`, `Classical.choice`, `Quot.sound`. The shipped
+`verification/Audit.lean` reruns these checks and the registry wrapper on the
+release tree; its recorded output is `verification/final-audit.log`. See
+`verification/STATUS.md` for commit-bound CI evidence. Compilation alone is
+not source fidelity.
 
 The final theorem uses a common arbitrary universe for k and A; no separate
 universe-lifting equivalence is advertised. The Challenge definitions are

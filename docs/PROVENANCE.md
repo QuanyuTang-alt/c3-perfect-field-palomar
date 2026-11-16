@@ -34,10 +34,25 @@ The library contains substantive Bongartz embedding machinery. We neither
 claim to have authored it nor replace it with a new axiom. Its own provenance,
 licenses and notices remain in the pinned Git dependency.
 
-Tau Ceti modules retain copyright and module adaptation notices. Several
-files were ported to the pinned Mathlib by replacing changed APIs with actual
-proofs; their mathematical statements were not weakened. See file origins
-and the statement/deviation records.
+Tau Ceti modules retain copyright and module adaptation notices. The 133
+vendored modules originate at immutable upstream commit
+`83769e442d55cda9d85b3927a93b286831c595ff`:
+https://github.com/TauCetiProject/TauCeti/tree/83769e442d55cda9d85b3927a93b286831c595ff
+
+`verification/vendor-tauceti.json` distinguishes each file's verified upstream
+SHA-256, initial local adaptation SHA-256 and current release SHA-256. All 133
+upstream hashes were rechecked against that commit fetched using GitHub CLI;
+all initial hashes were checked against the preserved prior sources. The
+initial adaptation modified two files, and eight files were subsequently
+ported to the release's pinned Mathlib. These historical revision fields are
+not dependency pins; the actual pins are in `lake-manifest.json`.
+
+`verification/module-origins.json` remains the complete 210-module release
+inventory, not a substitute for the upstream revision record. Source hash
+checks do not constitute an independent mathematical review. The proof
+closure of the advertised final result is checked by the axiom audit and
+independent kernels. No claim is made that every declaration in the entire
+upstream Tau Ceti repository was audited.
 
 Checks made by the same assisting agent are self-review, not independent
 expert review. No human line-by-line review or Palomar registration is claimed.

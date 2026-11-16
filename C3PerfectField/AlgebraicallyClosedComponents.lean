@@ -6,10 +6,15 @@ public import C3PerfectField.PrimeCoefficientOrbits
 public import C3PerfectField.ComponentSeparation
 
 /-!
-The algebraically closed component argument, conditional only on the
-still-unproved polynomial representation embedding. The witnesses are actual
-indecomposable tensor modules, and the automorphisms act on the actual AR graph.
-This is not the unconditional manuscript main theorem.
+The algebraically closed component argument for a supplied polynomial tensor
+representation embedding. This helper proves a conditional statement; it does
+not construct the polynomial embedding from infinite representation type.
+Its tensor modules and AR graph are the actual representation-theoretic objects.
+
+The unconditional algebraically closed result and perfect-field main theorem
+are proved in `C3Integration.lean` using the proved Kronecker embedding and the
+affine-cokernel family from `AffineCokernelComponents.lean`. The stronger
+polynomial-tensor existence predicate is not a premise of those final theorems.
 -/
 
 @[expose] public section
@@ -45,10 +50,10 @@ variable {k : Type u} {A : Type v} [Field k] [Ring A] [Algebra k A]
   [FiniteDimensional k A] [IsAlgClosed k]
   {κ : Type (max u v)} [Fintype κ] [DecidableEq κ]
 
-/-- Given the genuine tensor representation embedding, the manuscript's
-algebraically closed argument yields infinitely many actual AR components.
-Constructing that embedding from infinite representation type remains a
-separate, unproved obligation; this theorem does not discharge `thm:main`. -/
+/-- A supplied genuine tensor representation embedding yields infinitely many
+actual AR components. Polynomial embedding existence is not proved by this
+helper. For the unconditional result, see
+`infinite_arComponents_algebraicallyClosed` in `C3Integration.lean`. -/
 theorem infinite_arComponents_of_polynomialRepresentationEmbedding
     (ρ : A →ₐ[k] Matrix κ κ k[X]) (hρ : IsPolynomialRepresentationEmbedding ρ) :
     Infinite (ARGraph k A).ConnectedComponent := by

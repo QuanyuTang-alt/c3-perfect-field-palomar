@@ -41,13 +41,36 @@ Solution and does not occur in its proof dependency closure. Warnings from the
 pinned upstream library and stylistic local notices are visible and nonfatal;
 proof/build/audit/checker failures remain fatal.
 
-## Important qualification
+## Commit-bound Linux CI evidence
 
-Comparator and the independent checkers were actually run on macOS with
-`--inadvisably-no-sandbox`, because bubblewrap requires Linux namespaces.
-They checked the generated exports and returned acceptance, but this is **not**
-a sandboxed Palomar verification. The output warning is retained in the evidence.
+The original public commit `131da532f985913d25ec6c815a98153c4aa8d200` has
+**two actual successful GitHub Actions runs**:
+
+* [Lean build, metadata, integrity and axiom audit](https://github.com/QuanyuTang-alt/c3-perfect-field-palomar/actions/runs/43477729972):
+  full 10351-job build and the five advertised theorem axiom closures passed.
+* [Comparator and independent kernels](https://github.com/QuanyuTang-alt/c3-perfect-field-palomar/actions/runs/43477729917):
+  genuine Linux bubblewrap isolation; declaration/definition comparison and
+  con-ron (104382 declarations), NanoDa and Lean default replay all passed.
+
+These are immutable-revision workflow results, not claims inferred from README
+or local saved logs. Later commits must be checked against their own workflow
+runs. The documentation/provenance revision does not change mathematical
+statements or proofs; its current status is shown by the linked README badges
+and GitHub Actions. Do not treat these old run links as evidence that an arbitrary
+later revision passed.
+
+## Historical local checks and review boundary
+
+The saved local Comparator/checker records were obtained on macOS with
+`--inadvisably-no-sandbox`, because bubblewrap requires Linux namespaces. That
+local evidence is not a sandboxed run; the commit-bound Linux runs above supply
+the previously missing isolation evidence. Historical logs and source hashes
+refer to the snapshots named when recorded, rather than being silently relabeled
+as the later documentation revision.
+
 No independent human expert review or automated Palomar acceptance is claimed.
+A separate LLM review supplied by the maintainer concerns the original public
+commit; its identity, scope and limitations are recorded in `docs/REVIEW-NOTES.md`.
 
 The complete proof uses Enomoto's proved pinned representation-embedding
 library. Its embedding theorem is an ordinary proof dependency, not a new
